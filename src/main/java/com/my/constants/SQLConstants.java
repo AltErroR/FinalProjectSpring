@@ -109,8 +109,8 @@ public class SQLConstants {
             "  ORDER BY masters.rating*1 desc LIMIT ? OFFSET ?";
 
     ////////////////////////experiments/////////////////////////////////////////////////////////////////////////////////////////////////////////
-    public static final String SQL_AUTO_GET_YESTERDAY_DATE_MAILS = "SELECT a.id,login, email, date_slot\n" +
-            " From beauty_salon.accounts as a\n" +
-            " INNER JOIN beauty_salon.orders as o ON a.id = o.user_id\n" +
+    public static final String SQL_AUTO_GET_YESTERDAY_DATE_MAILS = "SELECT email\n" +
+            " From beauty_salon_2.accounts as a\n" +
+            " INNER JOIN beauty_salon_2.orders as o ON a.id = o.user_id\n" +
             " WHERE o.date_slot = CURDATE() - 1 and o.status='paid'";
 }

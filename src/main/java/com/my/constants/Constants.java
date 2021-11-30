@@ -48,7 +48,6 @@ public class Constants {
     public static final String MESSAGE = "message";
     public static final String RATE = "rate";
     public static final String ADMIN = "admin";
-    public static final String MAIL_PROPERTIES = "mail.properties";
     public static final String SALON_EMAIL = "b24963@gmail.com";
     public static final String SALON_NAME = "Romashka&Petrushka Salon";
     public static final String MAIL_MESSAGE = "Leave feedback please for yesterday service";
