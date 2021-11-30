@@ -7,6 +7,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public interface MainPageService {
-     String mainPageInitialization(String query, HttpServletResponse response, HttpServletRequest request) throws ServletException, IOException;
+     String mainPageInitialization( HttpServletResponse response, HttpServletRequest request) throws ServletException, IOException;
 
 }

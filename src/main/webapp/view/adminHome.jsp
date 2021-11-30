@@ -36,7 +36,7 @@
             <c:forEach var="order" items="${ordersList}">
                 <tr>
                     <td>${order.id}</td>
-                    <td>${order.masterLogin}</td>
+                    <td>${order.masterId}</td>
                     <td>${order.serviceName}</td>
                     <td>${order.timeSlot}</td>
                     <td>${order.dateSlot}</td>

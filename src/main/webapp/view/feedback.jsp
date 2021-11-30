@@ -32,7 +32,7 @@
         <tr style="text-align: center">
                 <td>${fv.id}</td>
                 <td>${fv.userId}</td>
-                <td>${fv.masterLogin}</td>
+                <td>${fv.masterId}</td>
                 <td>${fv.userRate}</td>
                 <td>${fv.feedbackMessage}</td>
         </tr>

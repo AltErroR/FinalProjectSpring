@@ -9,6 +9,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface MasterRepository extends JpaRepository<Master,Integer> {
     Master getMasterById(int id);
-    Master getMasterByLogin(String login);
-    boolean existsMasterByLogin(String login);
+
+    boolean existsMasterById(int id);
 }

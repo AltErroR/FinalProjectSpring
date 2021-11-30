@@ -18,10 +18,10 @@ public class Order {
     @Column(name = "id",unique = true,nullable = false)
     private int id;
 
-    @Column(name = "master_login",length= 45)
-    private String masterLogin;
+    @Column(name = "master_id")
+    private int masterId;
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "master_login",updatable = false,insertable = false,referencedColumnName = "login")
+    @JoinColumn(name = "master_id",updatable = false,insertable = false,referencedColumnName = "id")
     private Master master;
 
     @Column(name = "service_name",length= 45)
@@ -43,9 +43,9 @@ public class Order {
     @Column(name = "status",length= 45)
     private String  status;
     public Order() {}
-    public Order(int id, String masterLogin,int userId) {
+    public Order(int id, int masterId,int userId) {
         this.id = id;
-        this.masterLogin = masterLogin;
+        this.masterId = masterId;
         this.userId = userId;
     }
 
@@ -54,7 +54,7 @@ public class Order {
     @Override
     public String toString() {
         return "Order { Id : " + id +
-                " Master Login : " + masterLogin +
+                " Master Id : " + masterId +
                 " User Id : " + userId +
                 " Service Name : " + serviceName +
                 " Time : " + timeSlot +
@@ -69,12 +69,12 @@ public class Order {
         this.id = id;
     }
 
-    public String getMasterLogin() {
-        return masterLogin;
+    public int getMasterId() {
+        return masterId;
     }
 
-    public void setMasterLogin(String masterLogin) {
-        this.masterLogin = masterLogin;
+    public void setMasterId(int masterId) {
+        this.masterId = masterId;
     }
 
     public String getServiceName() {

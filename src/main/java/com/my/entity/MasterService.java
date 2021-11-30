@@ -17,10 +17,10 @@ public class MasterService {
     @Column(name = "id",unique = true,nullable = false)
     private int id;
 
-    @Column(name = "login_master")
-    protected String masterLogin;
+    @Column(name = "master_id")
+    protected int masterId;
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "login_master",updatable = false,insertable = false,referencedColumnName = "login")
+    @JoinColumn(name = "master_id",updatable = false,insertable = false,referencedColumnName = "id")
     private Master master;
 
     @Column(name= "name_service")
@@ -31,8 +31,8 @@ public class MasterService {
 
     public MasterService(){}
 
-    public MasterService(String masterLogin,String serviceName){
-        this.masterLogin= masterLogin;
+    public MasterService(int masterId,String serviceName){
+        this.masterId= masterId;
         this.serviceName=serviceName;
     }
 
@@ -41,7 +41,7 @@ public class MasterService {
     @Override
     public String toString() {
         return "MasterServiceDao { Id : " + id +
-                " Master Login : " + masterLogin +
+                " Master Login : " + masterId +
                 " Service Name : " + serviceName +" }";
     }
 
@@ -53,12 +53,12 @@ public class MasterService {
         this.id = id;
     }
 
-    public String getMasterLogin() {
-        return masterLogin;
+    public int getMasterId() {
+        return masterId;
     }
 
-    public void setMasterLogin(String masterLogin) {
-        this.masterLogin = masterLogin;
+    public void setMasterId(int masterId) {
+        this.masterId = masterId;
     }
 
     public String getServiceName() {

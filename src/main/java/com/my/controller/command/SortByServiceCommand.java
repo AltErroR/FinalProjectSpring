@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import static com.my.constants.Constants.*;
 import static com.my.constants.SQLConstants.SQL_SUBLIST_BY_SERVICE;
 @Component
 public class SortByServiceCommand implements Command {
@@ -22,6 +23,7 @@ public class SortByServiceCommand implements Command {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
         logger.debug("try to sort data on main by service ");
-        return mainPageServiceImplementation.mainPageInitialization(SQL_SUBLIST_BY_SERVICE,response,request);
+        request.setAttribute(SORT_BY, SERVICE);
+        return mainPageServiceImplementation.mainPageInitialization(response,request);
     }
 }

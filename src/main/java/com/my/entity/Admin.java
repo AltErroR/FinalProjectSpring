@@ -1,7 +1,6 @@
 package com.my.entity;
 
 import org.springframework.context.annotation.Scope;
-import org.springframework.data.annotation.Id;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
@@ -10,22 +9,27 @@ import javax.persistence.*;
 @Component
 @Scope(value="prototype")
 @Table(name="admins")
-public class Admin extends Account {
+public class Admin {
     @Id
-    @Column(name = "id",insertable = false,updatable = false)
-    private int id;
+    @Column(name = "id",unique = true,nullable = false)
+    protected int id;
 
-    public Admin(){
-        super();
+    @OneToOne(fetch = FetchType.LAZY)
+    @MapsId
+    @JoinColumn(name = "id",updatable = false,insertable = false,referencedColumnName = "id")
+    private Account account;
+
+    public int getId() {
+        return id;
     }
-    public Admin(int id,String login){
-    super(id,login);
+
+    public void setId(int id) {
+        this.id = id;
     }
+
+
     @Override
     public String toString() {
-        return "Admin { Id : " + id +
-                " Email : " + email +
-                " Login : " + login +
-                " Password : " + password + " }";
+        return "Admin { Id : " + id + " }";
     }
 }

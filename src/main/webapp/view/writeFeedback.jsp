@@ -34,7 +34,7 @@
             <c:forEach var="order" items="${ordersList}">
                 <tr>
                     <td>${order.id}</td>
-                    <td>${order.masterLogin}</td>
+                    <td>${order.masterId}</td>
                     <td>${order.serviceName}</td>
                     <td>${order.timeSlot}</td>
                     <td>${order.dateSlot}</td>
@@ -50,8 +50,7 @@
         <div style="text-align: center;"/>
         <textarea align="center" style="width:70%" rows="7" cols="80" name="message" placeholder=<fmt:message key="input message"/>>
         </textarea><br><br>
-        <input align="center" type="text" placeholder=
-        <fmt:message key="input master"/> name="master" required/><br><br>
+        <input align="center" type="text" placeholder=<fmt:message key="input master"/> name="master" required/><br><br>
         <label for="rate"><fmt:message key="which mark would you leave"/></label><br>
         <select style="alignment: center" style="width:10%" name="rate" id="rate" multiple>
             <option value="1">1</option>

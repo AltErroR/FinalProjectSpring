@@ -12,18 +12,18 @@ import static com.my.constants.SQLConstants.*;
 @Repository
 public interface OrderRepository extends JpaRepository<Order,Integer> {
     Order getOrderById(int id);
-    Order getByMasterLoginAndDateSlotAndTimeSlotAndServiceName(String masterLogin, Date date, String time, String serviceName);
+    Order getByMasterIdAndDateSlotAndTimeSlotAndServiceName(int masterId, Date date, String time, String serviceName);
 
 
-    List<Order> getAllByMasterLogin(String masterLogin);
+    List<Order> getAllByMasterId(String masterLogin);
     List<Order> getAllByUserId(int userId);
     List<Order> getAllByStatusEquals(String status);
-    boolean existsOrderByMasterLoginAndDateSlotAndTimeSlotAndServiceName(String masterLogin, Date date, String time, String serviceName);
+    boolean existsOrderByMasterIdAndDateSlotAndTimeSlotAndServiceName(int masterId, Date date, String time, String serviceName);
 
     @Query(value = SELECT_ORDERS_FOR_USER,nativeQuery = true)
     List<Order> getAll4User(int userId);
     @Query(value = SELECT_ORDERS_FOR_MASTER,nativeQuery = true)
-    List<Order> getAll4Master(String login);
+    List<Order> getAll4Master(int masterId);
     @Query(value = SELECT_RESERVED_ORDERS,nativeQuery = true)
     List<Order> getAll4Admin();
     @Query(value = SELECT_DONE_ORDERS,nativeQuery = true)

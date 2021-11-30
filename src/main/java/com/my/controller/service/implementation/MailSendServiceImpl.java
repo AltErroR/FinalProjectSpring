@@ -5,6 +5,8 @@ import com.my.repository.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
 import javax.mail.Message;
@@ -23,34 +25,31 @@ public class MailSendServiceImpl implements MailSendService {
     private static final Logger logger = LoggerFactory.getLogger(MailSendServiceImpl.class);
 
     @Autowired
-    MailSendServiceImpl(UserRepository userRepository){
+    MailSendServiceImpl(UserRepository userRepository
+//                        ,JavaMailSender javaMailSender
+                        ){
     this.userRepository=userRepository;
+//    this.javaMailSender=javaMailSender;
 }
 
     //todo watch how to make spring mail service
-
+//    JavaMailSender javaMailSender;
     List<String> mails;
     UserRepository userRepository;
     @Override
-    public void sendMail() throws IOException, MessagingException{
+    public void sendMail(){
+//
+//        logger.debug("try to send mail");
+//        mails= userRepository.getMails();
+//        SimpleMailMessage mailMessage= new SimpleMailMessage();
+//        for(String mail:mails){
+//        mailMessage.setTo(mail);
+//        mailMessage.setFrom(SALON_EMAIL);
+//        mailMessage.setSubject(SALON_NAME);
+//        mailMessage.setText(MAIL_MESSAGE);
+//        javaMailSender.send(mailMessage);
+//        }
 
-        logger.debug("try to send mail");
-        mails= userRepository.getmMails();
-        final Properties properties= new Properties();
-        properties.load(MainPageServiceImpl.class.getClassLoader().getResourceAsStream(MAIL_PROPERTIES));
-        Session mailSession= Session.getDefaultInstance(properties);
-        MimeMessage message= new MimeMessage(mailSession);
-        message.setFrom(new InternetAddress(SALON_EMAIL));
-        for(String mail:mails){
-            message.addRecipient(Message.RecipientType.TO,new InternetAddress(mail));
-        }
-        message.setSubject(SALON_NAME);
-        message.setText(MAIL_MESSAGE);
-
-        Transport tr = mailSession.getTransport();
-        tr.connect(null,MAIL_PASSWORD);
-        tr.sendMessage(message, message.getAllRecipients());
-        tr.close();
         logger.debug("success");
     }
 

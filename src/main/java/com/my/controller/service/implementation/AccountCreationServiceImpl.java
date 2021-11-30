@@ -1,9 +1,11 @@
 package com.my.controller.service.implementation;
 
 import com.my.controller.service.AccountCreationService;
+import com.my.entity.Account;
 import com.my.entity.Feedback;
 import com.my.entity.Master;
 import com.my.entity.User;
+import com.my.repository.AccountRepository;
 import com.my.repository.AdminRepository;
 import com.my.repository.MasterRepository;
 import com.my.repository.UserRepository;
@@ -16,6 +18,7 @@ import org.springframework.stereotype.Service;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import javax.transaction.Transactional;
 
 import static com.my.constants.Constants.*;
 
@@ -25,25 +28,34 @@ public class AccountCreationServiceImpl implements AccountCreationService {
     UserRepository userRepository;
     MasterRepository masterRepository;
     AdminRepository adminRepository;
+    AccountRepository accountRepository;
     User user;
     Master master;
+    Account account;
 
     @Autowired
-    public AccountCreationServiceImpl(UserRepository userRepository,MasterRepository masterRepository,
-                                      AdminRepository adminRepository){
+    public AccountCreationServiceImpl(UserRepository userRepository, MasterRepository masterRepository,
+                                      AdminRepository adminRepository, AccountRepository accountRepository){
 
         this.adminRepository= adminRepository;
         this.userRepository=userRepository;
         this.masterRepository=masterRepository;
+        this.accountRepository=accountRepository;
     }
     @Lookup
     public User getUser() {
         return null;
     }
     @Lookup
+    public Account getAccount() {
+        return null;
+    }
+    @Lookup
     public Master getMaster() {
         return null;
     }
+
+    @Transactional
         @Override
         public String creation(HttpServletRequest request, HttpServletResponse response) throws Exception {
             logger.debug("account creation");
@@ -57,25 +69,27 @@ public class AccountCreationServiceImpl implements AccountCreationService {
             String passwordRepeat=request.getParameter(PASSWORD_REPEAT);
             String email=request.getParameter(EMAIL);
             String role= request.getParameter(ROLE);
-            if ((userRepository.existsUserByLogin(login) ||
-                    masterRepository.existsMasterByLogin(login) ||
-                     adminRepository.existsAdminByLogin(login)) ||
+
+            if (accountRepository.existsAccountByLogin(login)||
                      !password.equals(passwordRepeat)) {
                 logger.warn("wrong input or account exist");
                 throw new Exception("Bad credentials for entered user data during account creation");
             }
+            account= getAccount();
+            account.setEmail(email);
+            account.setPassword(password);
+            account.setLogin(login);
+            accountRepository.save(account);
             if (USER.equals(role)) {
                 logger.debug("role - user");
                 session = request.getSession();
                 user=getUser();
+                user.setId(account.getId());
                 user.setWallet(0);
-                user.setEmail(email);
-                user.setPassword(password);
-                user.setLogin(login);
                 userRepository.save(user);
                 session.setAttribute(ROLE, role);
                 session.setAttribute(USER_ID, user.getId());
-                session.setAttribute(USER_LOGIN, user.getLogin());
+                session.setAttribute(USER_LOGIN, account.getLogin());
                 session.setAttribute(USER_LOGGED_IN, true);
                 session.setAttribute(WALLET,user.getWallet());
                 return MAIN_JSP;
@@ -84,15 +98,13 @@ public class AccountCreationServiceImpl implements AccountCreationService {
                 logger.debug("role - master");
                 session = request.getSession();
                 master=getMaster();
+                master.setId(account.getId());
                 master.setStatus("notVIP");
                 master.setRating("0");
-                master.setEmail(email);
-                master.setLogin(login);
-                master.setPassword(password);
                 masterRepository.save(master);
                 session.setAttribute(ROLE, role);
                 session.setAttribute(USER_ID, master.getId());
-                session.setAttribute(USER_LOGIN, master.getLogin());
+                session.setAttribute(USER_LOGIN, account.getLogin());
                 session.setAttribute(USER_LOGGED_IN, true);
                 return MASTER_HOME_JSP;
             }

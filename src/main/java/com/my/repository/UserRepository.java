@@ -11,9 +11,9 @@ import static com.my.constants.SQLConstants.SQL_AUTO_GET_YESTERDAY_DATE_MAILS;
 @Repository
 public interface UserRepository extends JpaRepository<User,Integer> {
     User getUserById(int id);
-    User getByLogin(String login);
-    boolean existsUserByLogin(String login);
 
     @Query(value = SQL_AUTO_GET_YESTERDAY_DATE_MAILS,nativeQuery = true)
-    List<String> getmMails();
+    List<String> getMails();
+
+    boolean existsUserById(int id);
 }

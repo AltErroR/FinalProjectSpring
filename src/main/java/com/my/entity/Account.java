@@ -1,21 +1,38 @@
 package com.my.entity;
 
 
-import javax.persistence.*;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
-@MappedSuperclass
-public class Account {
+import javax.persistence.*;
+import java.io.Serializable;
+import java.util.Set;
+
+@Entity
+@Component
+@Scope(value="prototype")
+@Table(name="accounts")
+public class Account implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id",unique = true,nullable = false)
     protected int id;
     @Column(name = "login",unique = true,length = 45)
     protected String login;
-    @Column(name = "pasword",length = 45)
+    @Column(name = "password",length = 45)
     protected String password;
     @Column(name="email",length = 45)
     protected String email;
 
+    @OneToOne(cascade = {CascadeType.DETACH},fetch = FetchType.LAZY, mappedBy = "account")
+    @PrimaryKeyJoinColumn
+    private transient Master master;
+    @OneToOne(cascade = {CascadeType.DETACH},fetch = FetchType.LAZY, mappedBy = "account")
+    @PrimaryKeyJoinColumn
+    private transient User user;
+    @OneToOne(cascade = {CascadeType.ALL},fetch = FetchType.LAZY, mappedBy = "account")
+    @PrimaryKeyJoinColumn
+    private transient Admin admin;
 
     public Account() {}
     public Account(int id, String login) {

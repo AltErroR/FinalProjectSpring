@@ -10,8 +10,8 @@ import org.springframework.stereotype.Component;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import static com.my.constants.Constants.*;
 import static com.my.constants.SQLConstants.SQL_SUBLIST_BY_ID;
-//todo redone pagination
 @Component
 public class MainPageCommand implements Command{
     private static final Logger logger = LoggerFactory.getLogger(MainPageCommand.class);
@@ -23,6 +23,7 @@ public class MainPageCommand implements Command{
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
         logger.debug("try to show data on main list");
-        return mainPageServiceImplementation.mainPageInitialization(SQL_SUBLIST_BY_ID,response,request);
+        request.setAttribute(SORT_BY, ID);
+        return mainPageServiceImplementation.mainPageInitialization(response,request);
     }
 }

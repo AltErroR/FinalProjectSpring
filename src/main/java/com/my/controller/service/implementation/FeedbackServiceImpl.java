@@ -2,14 +2,12 @@ package com.my.controller.service.implementation;
 
 import com.my.controller.service.FeedbackService;
 import com.my.entity.Feedback;
+import com.my.repository.AccountRepository;
 import com.my.repository.FeedbackRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Lookup;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletRequest;
@@ -20,14 +18,15 @@ import java.util.List;
 import static com.my.constants.Constants.*;
 
 @Service("FeedbackService")
-public class FeedbackServiceImpl implements FeedbackService, ApplicationContextAware {
+public class FeedbackServiceImpl implements FeedbackService{
     FeedbackRepository feedbackRepository;
+    AccountRepository accountRepository;
     Feedback feedback;
-    private ApplicationContext applicationContext;
 
     @Autowired
-    public FeedbackServiceImpl(FeedbackRepository feedbackRepository){
+    public FeedbackServiceImpl(FeedbackRepository feedbackRepository,AccountRepository accountRepository){
         this.feedbackRepository=feedbackRepository;
+        this.accountRepository=accountRepository;
     }
     @Lookup
     public Feedback getFeedback() {
@@ -52,24 +51,19 @@ public class FeedbackServiceImpl implements FeedbackService, ApplicationContextA
         int userId =(int) request.getSession().getAttribute(USER_ID);
         String message=request.getParameter(MESSAGE);
         String rate=request.getParameter(RATE);
-        String masterLogin=request.getParameter(MASTER);
-        if(feedbackRepository.existsFeedbackByUserIdAndMasterLogin(userId,  masterLogin)){
+        String login= request.getParameter(MASTER);
+        int masterId=accountRepository.getByLogin(login).getId();
+        if(feedbackRepository.existsFeedbackByUserIdAndMasterId(userId,  masterId)){
             logger.warn("feedbacks insertion to bd failed");
             throw new Exception("You already left your feedback, to this master, thanx");
         }
         feedback=getFeedback();
-        feedback.setMasterLogin(masterLogin);
+        feedback.setMasterId(masterId);
         feedback.setFeedbackMessage(message);
         feedback.setUserId(userId);
         feedback.setUserRate(rate);
         feedbackRepository.save(feedback);
         logger.debug("success");
         return SUCCESS_JSP;
-    }
-
-    @Override
-    public void setApplicationContext(ApplicationContext applicationContext)
-            throws BeansException {
-        this.applicationContext = applicationContext;
     }
 }

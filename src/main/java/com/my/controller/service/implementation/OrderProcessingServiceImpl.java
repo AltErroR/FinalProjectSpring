@@ -1,7 +1,6 @@
 package com.my.controller.service.implementation;
 
 import com.my.controller.service.OrderProcessingService;
-import com.my.entity.Feedback;
 import com.my.entity.Order;
 import com.my.entity.Service;
 import com.my.entity.User;
@@ -82,11 +81,11 @@ public class OrderProcessingServiceImpl implements OrderProcessingService {
              order = orderRepository.getOrderById(orderId);
              user = userRepository.getUserById(order.getUserId());
              service = serviceRepository.getServiceByName(order.getServiceName());
-            user.setWallet(user.getWallet()-service.getPrice());
-            if (user.getWallet()<0){
+            if (user.getWallet()-service.getPrice()<0){
                 logger.warn("wallet < price");
                 throw new Exception("Not Enought Money");
             }
+        user.setWallet(user.getWallet()-service.getPrice());
             order.setStatus("paid");
             orderRepository.save(order);
             userRepository.save(user);
@@ -116,7 +115,7 @@ public class OrderProcessingServiceImpl implements OrderProcessingService {
 
     @Override
     public String getMasterOrders(HttpServletRequest request, HttpServletResponse response){
-        List<Order> ordersList= orderRepository.getAll4Master(request.getSession().getAttribute(USER_LOGIN).toString());
+        List<Order> ordersList= orderRepository.getAll4Master(Integer.parseInt(request.getSession().getAttribute(USER_ID).toString()));
         request.setAttribute(ORDERS_LIST,ordersList);
         logger.debug(SUCCESS);
         return MASTER_HOME_JSP;

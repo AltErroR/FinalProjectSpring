@@ -27,7 +27,7 @@ public class BookingCommand implements Command{
         HttpSession session = request.getSession();
         Date dateSlot= Date.valueOf(request.getParameter(DATE));
         String timeSlot= request.getParameter(TIME);
-        String masterLogin= request.getParameter(MASTER);
+        String masterLogin=request.getParameter(MASTER);
         String serviceName= request.getParameter(SERVICE);
         int userId =(int) session.getAttribute(USER_ID);
         return bookingServiceImplementation.booking(dateSlot,timeSlot,masterLogin,serviceName,userId);

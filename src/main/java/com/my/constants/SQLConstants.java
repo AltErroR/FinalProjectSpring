@@ -51,7 +51,7 @@ public class SQLConstants {
     public static final String SELECT_ORDERS_FOR_USER= "SELECT * From beauty_salon_2.orders " +
             "WHERE date_slot = CURDATE() - 1 and status='paid' and user_id= ?";
     public static final String SELECT_ORDERS_FOR_MASTER= "SELECT * FROM beauty_salon_2.orders \n" +
-            " WHERE master_login = ? && date_slot = CURDATE()&& (status = 'reserved'||status = 'in progress')";
+            " WHERE master_id = ? && date_slot = CURDATE()&& (status = 'reserved'||status = 'in progress')";
 
     public static final String INSERT_INTO_SERVICE = "INSERT INTO beauty_salon_2.service (name) VALUES (?)";
     public static final String UPDATE_SERVICE ="UPDATE beauty_salon_2.service SET price = ? WHERE (name = ?)";
@@ -74,19 +74,43 @@ public class SQLConstants {
     public static final String DELETE_MASTER_SERVICES ="DELETE FROM  beauty_salon_2.service_master WHERE (id= ?)";
     public static final String SELECT_MASTER_SERVICES_ID ="SELECT id FROM beauty_salon_2.service_master";
     public static final String COUNT_MASTER_SERVICES = "select count(*) from services_masters";
-    public static final String SQL_SUBLIST_BY_ID = "SELECT * FROM beauty_salon_2.services_masters ORDER BY id ";
-    public static final String SQL_SUBLIST_BY_MASTER = "SELECT * FROM beauty_salon_2.services_masters ORDER BY login_master";
-    public static final String SQL_SUBLIST_BY_SERVICE = "SELECT * FROM beauty_salon_2.services_masters ORDER BY name_service ";
+    ////////////////////////experiments/////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    public static final String SQL_SUBLIST_BY_RATING ="SELECT sm.id,sm.login_master,sm.name_service FROM beauty_salon_2.services_masters as sm " +
-            "inner join beauty_salon_2.masters as m on sm.login_master = m.login ORDER BY m.rating*1 desc";
-    public static final String SQL_SUBLIST_BY_MASTER_NAME=" SELECT * FROM beauty_salon_2.service_master " +
-            " where login_master = ? LIMIT ? OFFSET ?";
-    public static final String SQL_SUBLIST_BY_SERVICE_NAME="SELECT * FROM beauty_salon_2.service_master " +
-            " where name_service = ? LIMIT ? OFFSET ?";
+    public static final String SQL_SUBLIST_BY_ID = "SELECT accounts.login,services_masters.name_service\n" +
+            "FROM services_masters, accounts\n" +
+            "WHERE services_masters.master_id  = accounts.id\n" +
+            "  ORDER BY services_masters.id LIMIT ? OFFSET ?";
 
-    public static final String SQL_AUTO_GET_YESTERDAY_DATE_MAILS = "SELECT email \n" +
-            "From beauty_salon_2.users as a\n" +
-            " INNER JOIN beauty_salon_2.orders as o ON a.id = o.user_id\n" +
-            " WHERE o.date_slot = CURDATE() - 1 and o.status='paid';";
+    public static final String SQL_SUBLIST_BY_MASTER = "SELECT accounts.login,services_masters.name_service\n" +
+            "FROM services_masters, accounts\n" +
+            "WHERE services_masters.master_id  = accounts.id\n" +
+            "  ORDER BY accounts.login LIMIT ? OFFSET ?";
+
+    public static final String SQL_SUBLIST_BY_SERVICE = "SELECT accounts.login,services_masters.name_service\n" +
+            "FROM services_masters, accounts\n" +
+            "WHERE services_masters.master_id  = accounts.id\n" +
+            "  ORDER BY services_masters.name_service LIMIT ? OFFSET ?";
+
+    public static final String SQL_SUBLIST_BY_RATING = "SELECT accounts.login,services_masters.name_service\n" +
+            "FROM services_masters, accounts,masters\n" +
+            "WHERE services_masters.master_id  = accounts.id\n" +
+            "  ORDER BY masters.rating*1 desc LIMIT ? OFFSET ? ";
+
+    public static final String SQL_SUBLIST_BY_MASTER_NAME= "SELECT DISTINCT accounts.login,services_masters.name_service\n" +
+            "FROM services_masters, accounts,masters\n" +
+            "WHERE services_masters.master_id  = accounts.id \n" +
+            "AND accounts.login= ?\n" +
+            "  ORDER BY masters.rating*1 desc LIMIT ? OFFSET ? ";
+
+    public static final String SQL_SUBLIST_BY_SERVICE_NAME=" SELECT DISTINCT accounts.login,services_masters.name_service\n" +
+            "FROM services_masters, accounts,masters\n" +
+            "WHERE services_masters.master_id  = accounts.id \n" +
+            "AND services_masters.name_service= ?\n" +
+            "  ORDER BY masters.rating*1 desc LIMIT ? OFFSET ?";
+
+    ////////////////////////experiments/////////////////////////////////////////////////////////////////////////////////////////////////////////
+    public static final String SQL_AUTO_GET_YESTERDAY_DATE_MAILS = "SELECT a.id,login, email, date_slot\n" +
+            " From beauty_salon.accounts as a\n" +
+            " INNER JOIN beauty_salon.orders as o ON a.id = o.user_id\n" +
+            " WHERE o.date_slot = CURDATE() - 1 and o.status='paid'";
 }

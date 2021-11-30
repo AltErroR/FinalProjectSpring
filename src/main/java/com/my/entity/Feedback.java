@@ -23,10 +23,10 @@ public class Feedback {
     @JoinColumn(name = "user_id",unique = true,insertable=false,updatable = false)
     private User user;
 
-    @Column(name = "master_login",length = 45)
-    private String masterLogin;
+    @Column(name = "master_id",length = 45)
+    private int masterId;
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "master_login",unique = true,insertable = false,updatable = false,referencedColumnName = "login")
+    @JoinColumn(name = "master_id",unique = true,insertable = false,updatable = false,referencedColumnName = "id")
     private Master master;
 
     @Column(name="feedback")
@@ -35,10 +35,10 @@ public class Feedback {
     private String userRate;
 
     public Feedback() {}
-    public Feedback(int id, int userId, String masterLogin) {
+    public Feedback(int id, int userId, int masterId) {
         this.id = id;
         this.userId = userId;
-        this.masterLogin = masterLogin;
+        this.masterId = masterId;
     }
 
     public int getId() {
@@ -57,12 +57,12 @@ public class Feedback {
         this.userId = userId;
     }
 
-    public String getMasterLogin() {
-        return masterLogin;
+    public int getMasterId() {
+        return masterId;
     }
 
-    public void setMasterLogin(String masterId) {
-        this.masterLogin = masterId;
+    public void setMasterId(int masterId) {
+        this.masterId = masterId;
     }
 
     public String getFeedbackMessage() {
@@ -84,7 +84,7 @@ public class Feedback {
     @Override
     public String toString() {
         return "Feedback { Id : " + id +
-                " Master Login : " + masterLogin +
+                " Master Login : " + masterId +
                 " User id : " + userId +
                 " Feedback : " + feedbackMessage +
                 " User rate : " + userRate + " }";
