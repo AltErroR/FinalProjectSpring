@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <property name="LOGS" value="./logs" />
+
+    <appender name="Console"
+              class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>
+                %green(%d{ISO8601}) %highlight(%-5level) [%blue(%t)] %yellow(%C{1.}): %msg%n%throwable
+            </Pattern>
+        </layout>
+    </appender>
+
+    <appender name="RollingFile"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>C:/Users/Dima/IdeaProjects/SpringFinalProject/logs/logfile.log</file>
+        <encoder
+                class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <Pattern>%d %p %C{1.} [%t] %m%n</Pattern>
+        </encoder>
+
+        <rollingPolicy
+                class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+
+            <fileNamePattern>${LOGS}/archived/spring-boot-logger-%d{yyyy-MM-dd}.%i.log
+            </fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy
+                    class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>10MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="RollingFile" />
+        <appender-ref ref="Console" />
+    </root>
+
+    <logger name="logger" level="trace" additivity="false">
+        <appender-ref ref="RollingFile" />
+        <appender-ref ref="Console" />
+    </logger>
+
+</configuration>
+
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<Configuration>-->
+<!--    <Appenders>-->
+<!--        <Console name="Console" target="SYSTEM_OUT">-->
+<!--            <PatternLayout-->
+<!--                    pattern="%style{%d{ISO8601}{green} %highlight{%-5level }[%style{%t}{bright,blue}] %style{%20.20c}{bright,yellow}: %m%n%throwable" />-->
+<!--        </Console>-->
+
+<!--        <RollingFile name="RollingFile"-->
+<!--                     fileName="C:/Users/Dima/IdeaProjects/SpringFinalProject/logs/logfile.log"-->
+<!--                     filePattern="./logs/$${date:yyyy-MM}/spring-boot-logger-log4j2-%d{-dd-MMMM-yyyy}-%i.log.gz">-->
+<!--            <PatternLayout>-->
+<!--                <pattern>%d{ISO8601} [%-5p][%-40.40l][%20.20c] - %m%n</pattern>-->
+<!--            </PatternLayout>-->
+<!--            <Policies>-->
+<!--                <OnStartupTriggeringPolicy />-->
+<!--                <SizeBasedTriggeringPolicy-->
+<!--                        size="10 MB" />-->
+<!--                <TimeBasedTriggeringPolicy />-->
+<!--            </Policies>-->
+<!--        </RollingFile>-->
+<!--    </Appenders>-->
+
+<!--    <Loggers>-->
+<!--        <Root level="info">-->
+<!--            <AppenderRef ref="Console" />-->
+<!--            <AppenderRef ref="RollingFile" />-->
+<!--        </Root>-->
+
+<!--        <Logger name="logger" level="trace"></Logger>-->
+<!--    </Loggers>-->
+
+<!--</Configuration>-->
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<Configuration>-->
+<!--    <Appenders>-->
+<!--        <Console name="Console" target="SYSTEM_OUT">-->
+<!--            <PatternLayout-->
+<!--                    pattern="%style{%d{ISO8601}{green} %highlight{%-5level }[%style{%t}{bright,blue}] %style{%20.20c}{bright,yellow}: %m%n%throwable" />-->
+<!--        </Console>-->
+
+<!--        <RollingFile name="RollingFile"-->
+<!--                     fileName="C:/Users/Dima/IdeaProjects/SpringFinalProject/logs/logfile.log"-->
+<!--                     filePattern="./logs/$${date:yyyy-MM}/spring-boot-logger-log4j2-%d{-dd-MMMM-yyyy}-%i.log.gz">-->
+<!--            <PatternLayout>-->
+<!--                <pattern>%d{ISO8601} [%-5p][%-40.40l][%20.20c] - %m%n</pattern>-->
+<!--            </PatternLayout>-->
+<!--            <Policies>-->
+<!--                <OnStartupTriggeringPolicy />-->
+<!--                <SizeBasedTriggeringPolicy-->
+<!--                        size="10 MB" />-->
+<!--                <TimeBasedTriggeringPolicy />-->
+<!--            </Policies>-->
+<!--        </RollingFile>-->
+<!--    </Appenders>-->
+
+<!--    <Loggers>-->
+<!--        <Root level="info">-->
+<!--            <AppenderRef ref="Console" />-->
+<!--            <AppenderRef ref="RollingFile" />-->
+<!--        </Root>-->
+
+<!--        <Logger name="logger" level="trace"></Logger>-->
+<!--    </Loggers>-->
+
+<!--</Configuration>-->
+
+
+
+
+
+

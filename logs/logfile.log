@@ -1,0 +1,718 @@
+2021-12-01 16:18:45,320 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-12-01 16:18:45,335 INFO org.springframework.boot.StartupInfoLogger [RMI TCP Connection(3)-127.0.0.1] Starting BeautySalon using Java 1.8.0_302 on DESKTOP-U3BAHQK with PID 19320 (C:\Users\Dima\IdeaProjects\SpringFinalProject\target\SpringFinalProject\WEB-INF\classes started by Dima in E:\apache-tomcat-9.54]\bin)
+2021-12-01 16:18:45,335 INFO org.springframework.boot.SpringApplication [RMI TCP Connection(3)-127.0.0.1] No active profile set, falling back to default profiles: default
+2021-12-01 16:18:46,453 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-01 16:18:46,607 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Finished Spring Data repository scanning in 114 ms. Found 8 JPA repository interfaces.
+2021-12-01 16:18:47,536 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [RMI TCP Connection(3)-127.0.0.1] Root WebApplicationContext: initialization completed in 2147 ms
+2021-12-01 16:18:47,975 INFO org.hibernate.jpa.internal.util.LogHelper [RMI TCP Connection(3)-127.0.0.1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-01 16:18:48,122 INFO org.hibernate.Version [RMI TCP Connection(3)-127.0.0.1] HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-01 16:18:48,507 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [RMI TCP Connection(3)-127.0.0.1] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-01 16:18:48,777 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(3)-127.0.0.1] HikariPool-1 - Starting...
+2021-12-01 16:18:49,265 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(3)-127.0.0.1] HikariPool-1 - Start completed.
+2021-12-01 16:18:49,324 INFO org.hibernate.dialect.Dialect [RMI TCP Connection(3)-127.0.0.1] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-12-01 16:18:51,245 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [RMI TCP Connection(3)-127.0.0.1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-01 16:18:51,277 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(3)-127.0.0.1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-01 16:18:52,807 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [RMI TCP Connection(3)-127.0.0.1] select count(*) as col_0_0_ from services_masters masterserv0_
+2021-12-01 16:18:53,009 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [RMI TCP Connection(3)-127.0.0.1] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-01 16:18:53,716 INFO org.springframework.boot.StartupInfoLogger [RMI TCP Connection(3)-127.0.0.1] Started BeautySalon in 9.346 seconds (JVM running for 16.038)
+2021-12-01 16:18:53,732 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Initializing Servlet 'myDispatcherServlet'
+2021-12-01 16:18:53,763 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-01 16:18:53,801 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Finished Spring Data repository scanning in 32 ms. Found 8 JPA repository interfaces.
+2021-12-01 16:18:54,264 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Completed initialization in 532 ms
+2021-12-01 16:18:54,804 INFO com.my.filter.AdminFilter [http-nio-8080-exec-1] admin filter started
+2021-12-01 16:18:54,804 INFO com.my.filter.AdminFilter [http-nio-8080-exec-1] admin access granted
+2021-12-01 16:18:54,804 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-1] request and response encoding set to UTF-8
+2021-12-01 16:18:54,819 INFO com.my.filter.LoginFilter [http-nio-8080-exec-1] login filter started
+2021-12-01 16:18:54,819 INFO com.my.filter.LoginFilter [http-nio-8080-exec-1] access granted
+2021-12-01 16:18:54,819 INFO com.my.filter.MasterFilter [http-nio-8080-exec-1] master filter started
+2021-12-01 16:18:54,819 INFO com.my.filter.MasterFilter [http-nio-8080-exec-1] master access granted
+2021-12-01 16:18:54,819 INFO com.my.filter.UserFilter [http-nio-8080-exec-1] user filter started
+2021-12-01 16:18:54,819 INFO com.my.filter.UserFilter [http-nio-8080-exec-1] user access granted
+2021-12-01 16:18:56,753 INFO com.my.filter.AdminFilter [http-nio-8080-exec-3] admin filter started
+2021-12-01 16:18:56,771 INFO com.my.filter.AdminFilter [http-nio-8080-exec-3] admin access granted
+2021-12-01 16:18:56,773 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-3] request and response encoding set to UTF-8
+2021-12-01 16:18:56,773 INFO com.my.filter.LoginFilter [http-nio-8080-exec-3] login filter started
+2021-12-01 16:18:56,773 INFO com.my.filter.LoginFilter [http-nio-8080-exec-3] access granted
+2021-12-01 16:18:56,773 INFO com.my.filter.MasterFilter [http-nio-8080-exec-3] master filter started
+2021-12-01 16:18:56,783 INFO com.my.filter.MasterFilter [http-nio-8080-exec-3] master access granted
+2021-12-01 16:18:56,783 INFO com.my.filter.UserFilter [http-nio-8080-exec-3] user filter started
+2021-12-01 16:18:56,783 INFO com.my.filter.UserFilter [http-nio-8080-exec-3] user access granted
+2021-12-01 16:19:23,445 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-5] Initializing Servlet 'dispatcherServlet'
+2021-12-01 16:19:23,445 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-5] Completed initialization in 0 ms
+2021-12-01 16:19:23,445 INFO com.my.filter.AdminFilter [http-nio-8080-exec-5] admin filter started
+2021-12-01 16:19:23,445 INFO com.my.filter.AdminFilter [http-nio-8080-exec-5] admin access granted
+2021-12-01 16:19:23,447 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-5] request and response encoding set to UTF-8
+2021-12-01 16:19:23,447 INFO com.my.filter.LoginFilter [http-nio-8080-exec-5] login filter started
+2021-12-01 16:19:23,447 INFO com.my.filter.LoginFilter [http-nio-8080-exec-5] access granted
+2021-12-01 16:19:23,447 INFO com.my.filter.MasterFilter [http-nio-8080-exec-5] master filter started
+2021-12-01 16:19:23,447 INFO com.my.filter.MasterFilter [http-nio-8080-exec-5] master access granted
+2021-12-01 16:19:23,447 INFO com.my.filter.UserFilter [http-nio-8080-exec-5] user filter started
+2021-12-01 16:19:23,447 INFO com.my.filter.UserFilter [http-nio-8080-exec-5] user access granted
+2021-12-01 16:19:23,601 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-5] SELECT accounts.login,services_masters.name_service
+FROM services_masters, accounts
+WHERE services_masters.master_id  = accounts.id
+  ORDER BY services_masters.id LIMIT ? OFFSET ?
+2021-12-01 16:19:23,607 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-5] binding parameter [1] as [INTEGER] - [4]
+2021-12-01 16:19:23,607 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-5] binding parameter [2] as [INTEGER] - [0]
+2021-12-01 16:19:23,621 INFO com.my.controller.service.implementation.MainPageServiceImpl [http-nio-8080-exec-5] list sorted by master
+2021-12-01 16:19:27,016 INFO com.my.filter.AdminFilter [http-nio-8080-exec-6] admin filter started
+2021-12-01 16:19:27,018 INFO com.my.filter.AdminFilter [http-nio-8080-exec-6] admin access granted
+2021-12-01 16:19:27,018 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-6] request and response encoding set to UTF-8
+2021-12-01 16:19:27,018 INFO com.my.filter.LoginFilter [http-nio-8080-exec-6] login filter started
+2021-12-01 16:19:27,018 INFO com.my.filter.LoginFilter [http-nio-8080-exec-6] access granted
+2021-12-01 16:19:27,018 INFO com.my.filter.MasterFilter [http-nio-8080-exec-6] master filter started
+2021-12-01 16:19:27,018 INFO com.my.filter.MasterFilter [http-nio-8080-exec-6] master access granted
+2021-12-01 16:19:27,018 INFO com.my.filter.UserFilter [http-nio-8080-exec-6] user filter started
+2021-12-01 16:19:27,018 INFO com.my.filter.UserFilter [http-nio-8080-exec-6] user access granted
+2021-12-01 16:19:27,020 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-6] SELECT accounts.login,services_masters.name_service
+FROM services_masters, accounts
+WHERE services_masters.master_id  = accounts.id
+  ORDER BY services_masters.id LIMIT ? OFFSET ?
+2021-12-01 16:19:27,020 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-6] binding parameter [1] as [INTEGER] - [4]
+2021-12-01 16:19:27,022 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-6] binding parameter [2] as [INTEGER] - [4]
+2021-12-01 16:19:27,024 INFO com.my.controller.service.implementation.MainPageServiceImpl [http-nio-8080-exec-6] list sorted by master
+2021-12-01 16:19:28,741 INFO com.my.filter.AdminFilter [http-nio-8080-exec-7] admin filter started
+2021-12-01 16:19:28,741 INFO com.my.filter.AdminFilter [http-nio-8080-exec-7] admin access granted
+2021-12-01 16:19:28,741 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-7] request and response encoding set to UTF-8
+2021-12-01 16:19:28,741 INFO com.my.filter.LoginFilter [http-nio-8080-exec-7] login filter started
+2021-12-01 16:19:28,741 INFO com.my.filter.LoginFilter [http-nio-8080-exec-7] access granted
+2021-12-01 16:19:28,741 INFO com.my.filter.MasterFilter [http-nio-8080-exec-7] master filter started
+2021-12-01 16:19:28,741 INFO com.my.filter.MasterFilter [http-nio-8080-exec-7] master access granted
+2021-12-01 16:19:28,741 INFO com.my.filter.UserFilter [http-nio-8080-exec-7] user filter started
+2021-12-01 16:19:28,741 INFO com.my.filter.UserFilter [http-nio-8080-exec-7] user access granted
+2021-12-01 16:19:28,741 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-7] SELECT accounts.login,services_masters.name_service
+FROM services_masters, accounts
+WHERE services_masters.master_id  = accounts.id
+  ORDER BY services_masters.id LIMIT ? OFFSET ?
+2021-12-01 16:19:28,741 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-7] binding parameter [1] as [INTEGER] - [4]
+2021-12-01 16:19:28,741 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-7] binding parameter [2] as [INTEGER] - [8]
+2021-12-01 16:19:28,741 INFO com.my.controller.service.implementation.MainPageServiceImpl [http-nio-8080-exec-7] list sorted by master
+2021-12-01 16:19:44,428 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-01 16:19:44,450 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2021-12-01 16:19:44,466 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2021-12-01 16:20:17,131 INFO org.springframework.boot.StartupInfoLogger [RMI TCP Connection(3)-127.0.0.1] Starting BeautySalon using Java 1.8.0_302 on DESKTOP-U3BAHQK with PID 20088 (C:\Users\Dima\IdeaProjects\SpringFinalProject\target\SpringFinalProject\WEB-INF\classes started by Dima in E:\apache-tomcat-9.54]\bin)
+2021-12-01 16:20:17,131 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-12-01 16:20:17,131 INFO org.springframework.boot.SpringApplication [RMI TCP Connection(3)-127.0.0.1] No active profile set, falling back to default profiles: default
+2021-12-01 16:20:18,303 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-01 16:20:18,450 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Finished Spring Data repository scanning in 121 ms. Found 8 JPA repository interfaces.
+2021-12-01 16:20:19,458 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [RMI TCP Connection(3)-127.0.0.1] Root WebApplicationContext: initialization completed in 2258 ms
+2021-12-01 16:20:19,943 INFO org.hibernate.jpa.internal.util.LogHelper [RMI TCP Connection(3)-127.0.0.1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-01 16:20:20,094 INFO org.hibernate.Version [RMI TCP Connection(3)-127.0.0.1] HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-01 16:20:20,476 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [RMI TCP Connection(3)-127.0.0.1] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-01 16:20:20,814 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(3)-127.0.0.1] HikariPool-1 - Starting...
+2021-12-01 16:20:21,316 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(3)-127.0.0.1] HikariPool-1 - Start completed.
+2021-12-01 16:20:21,362 INFO org.hibernate.dialect.Dialect [RMI TCP Connection(3)-127.0.0.1] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-12-01 16:20:23,636 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [RMI TCP Connection(3)-127.0.0.1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-01 16:20:23,667 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(3)-127.0.0.1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-01 16:20:25,494 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [RMI TCP Connection(3)-127.0.0.1] select count(*) as col_0_0_ from services_masters masterserv0_
+2021-12-01 16:20:25,696 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [RMI TCP Connection(3)-127.0.0.1] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-01 16:20:26,440 INFO org.springframework.boot.StartupInfoLogger [RMI TCP Connection(3)-127.0.0.1] Started BeautySalon in 10.229 seconds (JVM running for 17.313)
+2021-12-01 16:20:26,450 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Initializing Servlet 'myDispatcherServlet'
+2021-12-01 16:20:26,480 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-01 16:20:26,511 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Finished Spring Data repository scanning in 34 ms. Found 8 JPA repository interfaces.
+2021-12-01 16:20:26,984 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Completed initialization in 534 ms
+2021-12-01 16:20:27,275 INFO com.my.filter.AdminFilter [http-nio-8080-exec-1] admin filter started
+2021-12-01 16:20:27,275 INFO com.my.filter.AdminFilter [http-nio-8080-exec-1] admin access granted
+2021-12-01 16:20:27,275 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-1] request and response encoding set to UTF-8
+2021-12-01 16:20:27,275 INFO com.my.filter.LoginFilter [http-nio-8080-exec-1] login filter started
+2021-12-01 16:20:27,275 INFO com.my.filter.LoginFilter [http-nio-8080-exec-1] access granted
+2021-12-01 16:20:27,275 INFO com.my.filter.MasterFilter [http-nio-8080-exec-1] master filter started
+2021-12-01 16:20:27,275 INFO com.my.filter.MasterFilter [http-nio-8080-exec-1] master access granted
+2021-12-01 16:20:27,275 INFO com.my.filter.UserFilter [http-nio-8080-exec-1] user filter started
+2021-12-01 16:20:27,275 INFO com.my.filter.UserFilter [http-nio-8080-exec-1] user access granted
+2021-12-01 16:20:29,310 INFO com.my.filter.AdminFilter [http-nio-8080-exec-3] admin filter started
+2021-12-01 16:20:29,310 INFO com.my.filter.AdminFilter [http-nio-8080-exec-3] admin access granted
+2021-12-01 16:20:29,320 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-3] request and response encoding set to UTF-8
+2021-12-01 16:20:29,320 INFO com.my.filter.LoginFilter [http-nio-8080-exec-3] login filter started
+2021-12-01 16:20:29,320 INFO com.my.filter.LoginFilter [http-nio-8080-exec-3] access granted
+2021-12-01 16:20:29,320 INFO com.my.filter.MasterFilter [http-nio-8080-exec-3] master filter started
+2021-12-01 16:20:29,320 INFO com.my.filter.MasterFilter [http-nio-8080-exec-3] master access granted
+2021-12-01 16:20:29,320 INFO com.my.filter.UserFilter [http-nio-8080-exec-3] user filter started
+2021-12-01 16:20:29,320 INFO com.my.filter.UserFilter [http-nio-8080-exec-3] user access granted
+2021-12-01 16:20:31,585 INFO com.my.filter.AdminFilter [http-nio-8080-exec-4] admin filter started
+2021-12-01 16:20:31,585 INFO com.my.filter.AdminFilter [http-nio-8080-exec-4] admin access granted
+2021-12-01 16:20:31,585 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-4] request and response encoding set to UTF-8
+2021-12-01 16:20:31,585 INFO com.my.filter.LoginFilter [http-nio-8080-exec-4] login filter started
+2021-12-01 16:20:31,585 INFO com.my.filter.LoginFilter [http-nio-8080-exec-4] access granted
+2021-12-01 16:20:31,585 INFO com.my.filter.MasterFilter [http-nio-8080-exec-4] master filter started
+2021-12-01 16:20:31,585 INFO com.my.filter.MasterFilter [http-nio-8080-exec-4] master access granted
+2021-12-01 16:20:31,585 INFO com.my.filter.UserFilter [http-nio-8080-exec-4] user filter started
+2021-12-01 16:20:31,585 INFO com.my.filter.UserFilter [http-nio-8080-exec-4] user access granted
+2021-12-01 16:20:31,638 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-4] No mapping for GET /FPS/controller
+2021-12-01 16:20:31,638 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-4] No mapping for GET /FPS/error
+2021-12-01 16:20:40,267 INFO com.my.filter.AdminFilter [http-nio-8080-exec-5] admin filter started
+2021-12-01 16:20:40,282 INFO com.my.filter.AdminFilter [http-nio-8080-exec-5] admin access granted
+2021-12-01 16:20:40,282 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-5] request and response encoding set to UTF-8
+2021-12-01 16:20:40,282 INFO com.my.filter.LoginFilter [http-nio-8080-exec-5] login filter started
+2021-12-01 16:20:40,282 INFO com.my.filter.LoginFilter [http-nio-8080-exec-5] access granted
+2021-12-01 16:20:40,282 INFO com.my.filter.MasterFilter [http-nio-8080-exec-5] master filter started
+2021-12-01 16:20:40,282 INFO com.my.filter.MasterFilter [http-nio-8080-exec-5] master access granted
+2021-12-01 16:20:40,282 INFO com.my.filter.UserFilter [http-nio-8080-exec-5] user filter started
+2021-12-01 16:20:40,282 INFO com.my.filter.UserFilter [http-nio-8080-exec-5] user access granted
+2021-12-01 16:20:40,282 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-5] No mapping for GET /FPS/controller
+2021-12-01 16:20:40,282 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-5] No mapping for GET /FPS/error
+2021-12-01 16:20:42,254 INFO com.my.filter.AdminFilter [http-nio-8080-exec-6] admin filter started
+2021-12-01 16:20:42,254 INFO com.my.filter.AdminFilter [http-nio-8080-exec-6] admin access granted
+2021-12-01 16:20:42,254 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-6] request and response encoding set to UTF-8
+2021-12-01 16:20:42,269 INFO com.my.filter.LoginFilter [http-nio-8080-exec-6] login filter started
+2021-12-01 16:20:42,285 INFO com.my.filter.LoginFilter [http-nio-8080-exec-6] access granted
+2021-12-01 16:20:42,285 INFO com.my.filter.MasterFilter [http-nio-8080-exec-6] master filter started
+2021-12-01 16:20:42,285 INFO com.my.filter.MasterFilter [http-nio-8080-exec-6] master access granted
+2021-12-01 16:20:42,285 INFO com.my.filter.UserFilter [http-nio-8080-exec-6] user filter started
+2021-12-01 16:20:42,285 INFO com.my.filter.UserFilter [http-nio-8080-exec-6] user access granted
+2021-12-01 16:20:45,503 INFO com.my.filter.AdminFilter [http-nio-8080-exec-7] admin filter started
+2021-12-01 16:20:45,503 INFO com.my.filter.AdminFilter [http-nio-8080-exec-7] admin access granted
+2021-12-01 16:20:45,519 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-7] request and response encoding set to UTF-8
+2021-12-01 16:20:45,519 INFO com.my.filter.LoginFilter [http-nio-8080-exec-7] login filter started
+2021-12-01 16:20:45,519 INFO com.my.filter.LoginFilter [http-nio-8080-exec-7] access granted
+2021-12-01 16:20:45,519 INFO com.my.filter.MasterFilter [http-nio-8080-exec-7] master filter started
+2021-12-01 16:20:45,519 INFO com.my.filter.MasterFilter [http-nio-8080-exec-7] master access granted
+2021-12-01 16:20:45,519 INFO com.my.filter.UserFilter [http-nio-8080-exec-7] user filter started
+2021-12-01 16:20:45,519 INFO com.my.filter.UserFilter [http-nio-8080-exec-7] user access granted
+2021-12-01 16:20:45,519 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-7] No mapping for GET /FPS/controller
+2021-12-01 16:20:45,519 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-7] No mapping for GET /FPS/error
+2021-12-01 16:20:47,452 INFO com.my.filter.AdminFilter [http-nio-8080-exec-8] admin filter started
+2021-12-01 16:20:47,452 INFO com.my.filter.AdminFilter [http-nio-8080-exec-8] admin access granted
+2021-12-01 16:20:47,452 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-8] request and response encoding set to UTF-8
+2021-12-01 16:20:47,474 INFO com.my.filter.LoginFilter [http-nio-8080-exec-8] login filter started
+2021-12-01 16:20:47,474 INFO com.my.filter.LoginFilter [http-nio-8080-exec-8] access granted
+2021-12-01 16:20:47,474 INFO com.my.filter.MasterFilter [http-nio-8080-exec-8] master filter started
+2021-12-01 16:20:47,474 INFO com.my.filter.MasterFilter [http-nio-8080-exec-8] master access granted
+2021-12-01 16:20:47,490 INFO com.my.filter.UserFilter [http-nio-8080-exec-8] user filter started
+2021-12-01 16:20:47,490 INFO com.my.filter.UserFilter [http-nio-8080-exec-8] user access granted
+2021-12-01 16:21:04,047 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-01 16:21:04,063 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2021-12-01 16:21:04,074 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2021-12-01 16:21:46,032 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-12-01 16:21:46,048 INFO org.springframework.boot.StartupInfoLogger [RMI TCP Connection(3)-127.0.0.1] Starting BeautySalon using Java 1.8.0_302 on DESKTOP-U3BAHQK with PID 27300 (C:\Users\Dima\IdeaProjects\SpringFinalProject\target\SpringFinalProject\WEB-INF\classes started by Dima in E:\apache-tomcat-9.54]\bin)
+2021-12-01 16:21:46,048 INFO org.springframework.boot.SpringApplication [RMI TCP Connection(3)-127.0.0.1] No active profile set, falling back to default profiles: default
+2021-12-01 16:21:47,266 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-01 16:21:47,413 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Finished Spring Data repository scanning in 122 ms. Found 8 JPA repository interfaces.
+2021-12-01 16:21:48,353 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [RMI TCP Connection(3)-127.0.0.1] Root WebApplicationContext: initialization completed in 2243 ms
+2021-12-01 16:21:48,785 INFO org.hibernate.jpa.internal.util.LogHelper [RMI TCP Connection(3)-127.0.0.1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-01 16:21:48,925 INFO org.hibernate.Version [RMI TCP Connection(3)-127.0.0.1] HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-01 16:21:49,286 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [RMI TCP Connection(3)-127.0.0.1] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-01 16:21:49,581 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(3)-127.0.0.1] HikariPool-1 - Starting...
+2021-12-01 16:21:50,073 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(3)-127.0.0.1] HikariPool-1 - Start completed.
+2021-12-01 16:21:50,104 INFO org.hibernate.dialect.Dialect [RMI TCP Connection(3)-127.0.0.1] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-12-01 16:21:52,056 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [RMI TCP Connection(3)-127.0.0.1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-01 16:21:52,087 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(3)-127.0.0.1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-01 16:21:53,624 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [RMI TCP Connection(3)-127.0.0.1] select count(*) as col_0_0_ from services_masters masterserv0_
+2021-12-01 16:21:53,808 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [RMI TCP Connection(3)-127.0.0.1] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-01 16:21:54,584 INFO org.springframework.boot.StartupInfoLogger [RMI TCP Connection(3)-127.0.0.1] Started BeautySalon in 9.575 seconds (JVM running for 16.484)
+2021-12-01 16:21:54,604 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Initializing Servlet 'myDispatcherServlet'
+2021-12-01 16:21:54,634 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-01 16:21:54,673 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Finished Spring Data repository scanning in 33 ms. Found 8 JPA repository interfaces.
+2021-12-01 16:21:55,309 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Completed initialization in 695 ms
+2021-12-01 16:21:55,637 INFO com.my.filter.AdminFilter [http-nio-8080-exec-1] admin filter started
+2021-12-01 16:21:55,637 INFO com.my.filter.AdminFilter [http-nio-8080-exec-1] admin access granted
+2021-12-01 16:21:55,652 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-1] request and response encoding set to UTF-8
+2021-12-01 16:21:55,652 INFO com.my.filter.LoginFilter [http-nio-8080-exec-1] login filter started
+2021-12-01 16:21:55,652 INFO com.my.filter.LoginFilter [http-nio-8080-exec-1] access granted
+2021-12-01 16:21:55,652 INFO com.my.filter.MasterFilter [http-nio-8080-exec-1] master filter started
+2021-12-01 16:21:55,652 INFO com.my.filter.MasterFilter [http-nio-8080-exec-1] master access granted
+2021-12-01 16:21:55,652 INFO com.my.filter.UserFilter [http-nio-8080-exec-1] user filter started
+2021-12-01 16:21:55,652 INFO com.my.filter.UserFilter [http-nio-8080-exec-1] user access granted
+2021-12-01 16:21:57,719 INFO com.my.filter.AdminFilter [http-nio-8080-exec-3] admin filter started
+2021-12-01 16:21:57,719 INFO com.my.filter.AdminFilter [http-nio-8080-exec-3] admin access granted
+2021-12-01 16:21:57,719 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-3] request and response encoding set to UTF-8
+2021-12-01 16:21:57,719 INFO com.my.filter.LoginFilter [http-nio-8080-exec-3] login filter started
+2021-12-01 16:21:57,719 INFO com.my.filter.LoginFilter [http-nio-8080-exec-3] access granted
+2021-12-01 16:21:57,719 INFO com.my.filter.MasterFilter [http-nio-8080-exec-3] master filter started
+2021-12-01 16:21:57,729 INFO com.my.filter.MasterFilter [http-nio-8080-exec-3] master access granted
+2021-12-01 16:21:57,729 INFO com.my.filter.UserFilter [http-nio-8080-exec-3] user filter started
+2021-12-01 16:21:57,729 INFO com.my.filter.UserFilter [http-nio-8080-exec-3] user access granted
+2021-12-01 16:22:23,189 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-5] Initializing Servlet 'dispatcherServlet'
+2021-12-01 16:22:23,204 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-5] Completed initialization in 15 ms
+2021-12-01 16:22:23,204 INFO com.my.filter.AdminFilter [http-nio-8080-exec-5] admin filter started
+2021-12-01 16:22:23,204 INFO com.my.filter.AdminFilter [http-nio-8080-exec-5] admin access granted
+2021-12-01 16:22:23,204 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-5] request and response encoding set to UTF-8
+2021-12-01 16:22:23,204 INFO com.my.filter.LoginFilter [http-nio-8080-exec-5] login filter started
+2021-12-01 16:22:23,204 INFO com.my.filter.LoginFilter [http-nio-8080-exec-5] access granted
+2021-12-01 16:22:23,204 INFO com.my.filter.MasterFilter [http-nio-8080-exec-5] master filter started
+2021-12-01 16:22:23,204 INFO com.my.filter.MasterFilter [http-nio-8080-exec-5] master access granted
+2021-12-01 16:22:23,204 INFO com.my.filter.UserFilter [http-nio-8080-exec-5] user filter started
+2021-12-01 16:22:23,204 INFO com.my.filter.UserFilter [http-nio-8080-exec-5] user access granted
+2021-12-01 16:22:23,367 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-5] SELECT accounts.login,services_masters.name_service
+FROM services_masters, accounts
+WHERE services_masters.master_id  = accounts.id
+  ORDER BY services_masters.id LIMIT ? OFFSET ?
+2021-12-01 16:22:23,374 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-5] binding parameter [1] as [INTEGER] - [4]
+2021-12-01 16:22:23,374 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-5] binding parameter [2] as [INTEGER] - [0]
+2021-12-01 16:22:23,389 INFO com.my.controller.service.implementation.MainPageServiceImpl [http-nio-8080-exec-5] list sorted by master
+2021-12-01 16:22:31,957 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-01 16:22:31,972 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2021-12-01 16:22:31,988 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2021-12-01 16:22:57,007 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-12-01 16:22:57,014 INFO org.springframework.boot.StartupInfoLogger [RMI TCP Connection(3)-127.0.0.1] Starting BeautySalon using Java 1.8.0_302 on DESKTOP-U3BAHQK with PID 27832 (C:\Users\Dima\IdeaProjects\SpringFinalProject\target\SpringFinalProject\WEB-INF\classes started by Dima in E:\apache-tomcat-9.54]\bin)
+2021-12-01 16:22:57,014 INFO org.springframework.boot.SpringApplication [RMI TCP Connection(3)-127.0.0.1] No active profile set, falling back to default profiles: default
+2021-12-01 16:22:58,147 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-01 16:22:58,294 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Finished Spring Data repository scanning in 117 ms. Found 8 JPA repository interfaces.
+2021-12-01 16:22:59,234 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [RMI TCP Connection(3)-127.0.0.1] Root WebApplicationContext: initialization completed in 2148 ms
+2021-12-01 16:22:59,759 INFO org.hibernate.jpa.internal.util.LogHelper [RMI TCP Connection(3)-127.0.0.1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-01 16:22:59,913 INFO org.hibernate.Version [RMI TCP Connection(3)-127.0.0.1] HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-01 16:23:00,314 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [RMI TCP Connection(3)-127.0.0.1] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-01 16:23:00,600 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(3)-127.0.0.1] HikariPool-1 - Starting...
+2021-12-01 16:23:01,176 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(3)-127.0.0.1] HikariPool-1 - Start completed.
+2021-12-01 16:23:01,236 INFO org.hibernate.dialect.Dialect [RMI TCP Connection(3)-127.0.0.1] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-12-01 16:23:03,231 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [RMI TCP Connection(3)-127.0.0.1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-01 16:23:03,246 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(3)-127.0.0.1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-01 16:23:04,785 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [RMI TCP Connection(3)-127.0.0.1] select count(*) as col_0_0_ from services_masters masterserv0_
+2021-12-01 16:23:04,997 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [RMI TCP Connection(3)-127.0.0.1] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-01 16:23:05,710 INFO org.springframework.boot.StartupInfoLogger [RMI TCP Connection(3)-127.0.0.1] Started BeautySalon in 9.64 seconds (JVM running for 16.078)
+2021-12-01 16:23:05,722 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Initializing Servlet 'myDispatcherServlet'
+2021-12-01 16:23:05,752 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-01 16:23:05,782 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Finished Spring Data repository scanning in 34 ms. Found 8 JPA repository interfaces.
+2021-12-01 16:23:06,315 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Completed initialization in 585 ms
+2021-12-01 16:23:06,699 INFO com.my.filter.AdminFilter [http-nio-8080-exec-1] admin filter started
+2021-12-01 16:23:06,699 INFO com.my.filter.AdminFilter [http-nio-8080-exec-1] admin access granted
+2021-12-01 16:23:06,699 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-1] request and response encoding set to UTF-8
+2021-12-01 16:23:06,699 INFO com.my.filter.LoginFilter [http-nio-8080-exec-1] login filter started
+2021-12-01 16:23:06,699 INFO com.my.filter.LoginFilter [http-nio-8080-exec-1] access granted
+2021-12-01 16:23:06,699 INFO com.my.filter.MasterFilter [http-nio-8080-exec-1] master filter started
+2021-12-01 16:23:06,699 INFO com.my.filter.MasterFilter [http-nio-8080-exec-1] master access granted
+2021-12-01 16:23:06,699 INFO com.my.filter.UserFilter [http-nio-8080-exec-1] user filter started
+2021-12-01 16:23:06,699 INFO com.my.filter.UserFilter [http-nio-8080-exec-1] user access granted
+2021-12-01 16:23:08,934 INFO com.my.filter.AdminFilter [http-nio-8080-exec-3] admin filter started
+2021-12-01 16:23:08,952 INFO com.my.filter.AdminFilter [http-nio-8080-exec-3] admin access granted
+2021-12-01 16:23:08,982 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-3] request and response encoding set to UTF-8
+2021-12-01 16:23:08,982 INFO com.my.filter.LoginFilter [http-nio-8080-exec-3] login filter started
+2021-12-01 16:23:08,982 INFO com.my.filter.LoginFilter [http-nio-8080-exec-3] access granted
+2021-12-01 16:23:08,982 INFO com.my.filter.MasterFilter [http-nio-8080-exec-3] master filter started
+2021-12-01 16:23:09,012 INFO com.my.filter.MasterFilter [http-nio-8080-exec-3] master access granted
+2021-12-01 16:23:09,012 INFO com.my.filter.UserFilter [http-nio-8080-exec-3] user filter started
+2021-12-01 16:23:09,012 INFO com.my.filter.UserFilter [http-nio-8080-exec-3] user access granted
+2021-12-01 16:23:30,737 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-5] Initializing Servlet 'dispatcherServlet'
+2021-12-01 16:23:30,737 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-5] Completed initialization in 0 ms
+2021-12-01 16:23:30,737 INFO com.my.filter.AdminFilter [http-nio-8080-exec-5] admin filter started
+2021-12-01 16:23:30,737 INFO com.my.filter.AdminFilter [http-nio-8080-exec-5] admin access granted
+2021-12-01 16:23:30,737 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-5] request and response encoding set to UTF-8
+2021-12-01 16:23:30,737 INFO com.my.filter.LoginFilter [http-nio-8080-exec-5] login filter started
+2021-12-01 16:23:30,737 INFO com.my.filter.LoginFilter [http-nio-8080-exec-5] access granted
+2021-12-01 16:23:30,737 INFO com.my.filter.MasterFilter [http-nio-8080-exec-5] master filter started
+2021-12-01 16:23:30,737 INFO com.my.filter.MasterFilter [http-nio-8080-exec-5] master access granted
+2021-12-01 16:23:30,737 INFO com.my.filter.UserFilter [http-nio-8080-exec-5] user filter started
+2021-12-01 16:23:30,737 INFO com.my.filter.UserFilter [http-nio-8080-exec-5] user access granted
+2021-12-01 16:23:30,907 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-5] SELECT accounts.login,services_masters.name_service
+FROM services_masters, accounts
+WHERE services_masters.master_id  = accounts.id
+  ORDER BY services_masters.id LIMIT ? OFFSET ?
+2021-12-01 16:23:30,922 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-5] binding parameter [1] as [INTEGER] - [4]
+2021-12-01 16:23:30,922 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-5] binding parameter [2] as [INTEGER] - [0]
+2021-12-01 16:23:30,938 INFO com.my.controller.service.implementation.MainPageServiceImpl [http-nio-8080-exec-5] list sorted by master
+2021-12-01 16:24:53,895 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-01 16:24:53,917 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2021-12-01 16:24:53,933 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2021-12-01 16:38:11,954 INFO org.springframework.boot.StartupInfoLogger [RMI TCP Connection(3)-127.0.0.1] Starting BeautySalon using Java 1.8.0_302 on DESKTOP-U3BAHQK with PID 24072 (C:\Users\Dima\IdeaProjects\SpringFinalProject\target\SpringFinalProject\WEB-INF\classes started by Dima in E:\apache-tomcat-9.54]\bin)
+2021-12-01 16:38:11,969 INFO org.springframework.boot.SpringApplication [RMI TCP Connection(3)-127.0.0.1] No active profile set, falling back to default profiles: default
+2021-12-01 16:38:11,969 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-12-01 16:38:13,056 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-01 16:38:13,197 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Finished Spring Data repository scanning in 117 ms. Found 8 JPA repository interfaces.
+2021-12-01 16:38:14,143 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [RMI TCP Connection(3)-127.0.0.1] Root WebApplicationContext: initialization completed in 2120 ms
+2021-12-01 16:38:14,578 INFO org.hibernate.jpa.internal.util.LogHelper [RMI TCP Connection(3)-127.0.0.1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-01 16:38:14,713 INFO org.hibernate.Version [RMI TCP Connection(3)-127.0.0.1] HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-01 16:38:15,076 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [RMI TCP Connection(3)-127.0.0.1] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-01 16:38:15,346 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(3)-127.0.0.1] HikariPool-1 - Starting...
+2021-12-01 16:38:15,839 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(3)-127.0.0.1] HikariPool-1 - Start completed.
+2021-12-01 16:38:15,899 INFO org.hibernate.dialect.Dialect [RMI TCP Connection(3)-127.0.0.1] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-12-01 16:38:17,861 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [RMI TCP Connection(3)-127.0.0.1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-01 16:38:17,893 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(3)-127.0.0.1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-01 16:38:19,439 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [RMI TCP Connection(3)-127.0.0.1] select count(*) as col_0_0_ from services_masters masterserv0_
+2021-12-01 16:38:19,629 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [RMI TCP Connection(3)-127.0.0.1] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-01 16:38:20,327 INFO org.springframework.boot.StartupInfoLogger [RMI TCP Connection(3)-127.0.0.1] Started BeautySalon in 9.294 seconds (JVM running for 15.98)
+2021-12-01 16:38:20,347 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Initializing Servlet 'myDispatcherServlet'
+2021-12-01 16:38:20,367 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-01 16:38:20,407 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Finished Spring Data repository scanning in 33 ms. Found 8 JPA repository interfaces.
+2021-12-01 16:38:20,951 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Completed initialization in 602 ms
+2021-12-01 16:38:21,414 INFO com.my.filter.AdminFilter [http-nio-8080-exec-1] admin filter started
+2021-12-01 16:38:21,416 INFO com.my.filter.AdminFilter [http-nio-8080-exec-1] admin access granted
+2021-12-01 16:38:21,416 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-1] request and response encoding set to UTF-8
+2021-12-01 16:38:21,416 INFO com.my.filter.LoginFilter [http-nio-8080-exec-1] login filter started
+2021-12-01 16:38:21,416 INFO com.my.filter.LoginFilter [http-nio-8080-exec-1] access granted
+2021-12-01 16:38:21,416 INFO com.my.filter.MasterFilter [http-nio-8080-exec-1] master filter started
+2021-12-01 16:38:21,416 INFO com.my.filter.MasterFilter [http-nio-8080-exec-1] master access granted
+2021-12-01 16:38:21,416 INFO com.my.filter.UserFilter [http-nio-8080-exec-1] user filter started
+2021-12-01 16:38:21,416 INFO com.my.filter.UserFilter [http-nio-8080-exec-1] user access granted
+2021-12-01 16:38:23,623 INFO com.my.filter.AdminFilter [http-nio-8080-exec-3] admin filter started
+2021-12-01 16:38:23,623 INFO com.my.filter.AdminFilter [http-nio-8080-exec-3] admin access granted
+2021-12-01 16:38:23,623 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-3] request and response encoding set to UTF-8
+2021-12-01 16:38:23,623 INFO com.my.filter.LoginFilter [http-nio-8080-exec-3] login filter started
+2021-12-01 16:38:23,623 INFO com.my.filter.LoginFilter [http-nio-8080-exec-3] access granted
+2021-12-01 16:38:23,623 INFO com.my.filter.MasterFilter [http-nio-8080-exec-3] master filter started
+2021-12-01 16:38:23,623 INFO com.my.filter.MasterFilter [http-nio-8080-exec-3] master access granted
+2021-12-01 16:38:23,623 INFO com.my.filter.UserFilter [http-nio-8080-exec-3] user filter started
+2021-12-01 16:38:23,623 INFO com.my.filter.UserFilter [http-nio-8080-exec-3] user access granted
+2021-12-01 16:38:37,672 INFO com.my.filter.AdminFilter [http-nio-8080-exec-4] admin filter started
+2021-12-01 16:38:37,672 INFO com.my.filter.AdminFilter [http-nio-8080-exec-4] admin access granted
+2021-12-01 16:38:37,672 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-4] request and response encoding set to UTF-8
+2021-12-01 16:38:37,672 INFO com.my.filter.LoginFilter [http-nio-8080-exec-4] login filter started
+2021-12-01 16:38:37,672 INFO com.my.filter.LoginFilter [http-nio-8080-exec-4] access granted
+2021-12-01 16:38:37,672 INFO com.my.filter.MasterFilter [http-nio-8080-exec-4] master filter started
+2021-12-01 16:38:37,672 INFO com.my.filter.MasterFilter [http-nio-8080-exec-4] master access granted
+2021-12-01 16:38:37,672 INFO com.my.filter.UserFilter [http-nio-8080-exec-4] user filter started
+2021-12-01 16:38:37,672 INFO com.my.filter.UserFilter [http-nio-8080-exec-4] user access granted
+2021-12-01 16:38:37,710 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-4] No mapping for GET /FPS/controller
+2021-12-01 16:38:37,710 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-4] No mapping for GET /FPS/error
+2021-12-01 16:38:42,018 INFO com.my.filter.AdminFilter [http-nio-8080-exec-5] admin filter started
+2021-12-01 16:38:42,018 INFO com.my.filter.AdminFilter [http-nio-8080-exec-5] admin access granted
+2021-12-01 16:38:42,018 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-5] request and response encoding set to UTF-8
+2021-12-01 16:38:42,018 INFO com.my.filter.LoginFilter [http-nio-8080-exec-5] login filter started
+2021-12-01 16:38:42,018 INFO com.my.filter.LoginFilter [http-nio-8080-exec-5] access granted
+2021-12-01 16:38:42,018 INFO com.my.filter.MasterFilter [http-nio-8080-exec-5] master filter started
+2021-12-01 16:38:42,018 INFO com.my.filter.MasterFilter [http-nio-8080-exec-5] master access granted
+2021-12-01 16:38:42,018 INFO com.my.filter.UserFilter [http-nio-8080-exec-5] user filter started
+2021-12-01 16:38:42,018 INFO com.my.filter.UserFilter [http-nio-8080-exec-5] user access granted
+2021-12-01 16:38:52,098 INFO com.my.filter.AdminFilter [http-nio-8080-exec-6] admin filter started
+2021-12-01 16:38:52,098 INFO com.my.filter.AdminFilter [http-nio-8080-exec-6] admin access granted
+2021-12-01 16:38:52,098 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-6] request and response encoding set to UTF-8
+2021-12-01 16:38:52,098 INFO com.my.filter.LoginFilter [http-nio-8080-exec-6] login filter started
+2021-12-01 16:38:52,098 INFO com.my.filter.LoginFilter [http-nio-8080-exec-6] access granted
+2021-12-01 16:38:52,098 INFO com.my.filter.MasterFilter [http-nio-8080-exec-6] master filter started
+2021-12-01 16:38:52,098 INFO com.my.filter.MasterFilter [http-nio-8080-exec-6] master access granted
+2021-12-01 16:38:52,098 INFO com.my.filter.UserFilter [http-nio-8080-exec-6] user filter started
+2021-12-01 16:38:52,098 INFO com.my.filter.UserFilter [http-nio-8080-exec-6] user access granted
+2021-12-01 16:38:52,098 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-6] No mapping for GET /FPS/controller
+2021-12-01 16:38:52,098 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-6] No mapping for GET /FPS/error
+2021-12-01 16:38:59,321 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-01 16:38:59,352 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2021-12-01 16:38:59,374 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2021-12-01 16:49:17,203 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-12-01 16:49:17,234 INFO org.springframework.boot.StartupInfoLogger [RMI TCP Connection(3)-127.0.0.1] Starting BeautySalon using Java 1.8.0_302 on DESKTOP-U3BAHQK with PID 26592 (C:\Users\Dima\IdeaProjects\SpringFinalProject\target\SpringFinalProject\WEB-INF\classes started by Dima in E:\apache-tomcat-9.54]\bin)
+2021-12-01 16:49:17,234 INFO org.springframework.boot.SpringApplication [RMI TCP Connection(3)-127.0.0.1] No active profile set, falling back to default profiles: default
+2021-12-01 16:49:18,384 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-01 16:49:18,522 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Finished Spring Data repository scanning in 120 ms. Found 8 JPA repository interfaces.
+2021-12-01 16:49:19,455 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [RMI TCP Connection(3)-127.0.0.1] Root WebApplicationContext: initialization completed in 2158 ms
+2021-12-01 16:49:19,887 INFO org.hibernate.jpa.internal.util.LogHelper [RMI TCP Connection(3)-127.0.0.1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-01 16:49:20,025 INFO org.hibernate.Version [RMI TCP Connection(3)-127.0.0.1] HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-01 16:49:20,389 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [RMI TCP Connection(3)-127.0.0.1] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-01 16:49:20,658 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(3)-127.0.0.1] HikariPool-1 - Starting...
+2021-12-01 16:49:21,175 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(3)-127.0.0.1] HikariPool-1 - Start completed.
+2021-12-01 16:49:21,225 INFO org.hibernate.dialect.Dialect [RMI TCP Connection(3)-127.0.0.1] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-12-01 16:49:23,214 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [RMI TCP Connection(3)-127.0.0.1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-01 16:49:23,230 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(3)-127.0.0.1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-01 16:49:24,782 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [RMI TCP Connection(3)-127.0.0.1] select count(*) as col_0_0_ from services_masters masterserv0_
+2021-12-01 16:49:24,964 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [RMI TCP Connection(3)-127.0.0.1] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-01 16:49:25,690 INFO org.springframework.boot.StartupInfoLogger [RMI TCP Connection(3)-127.0.0.1] Started BeautySalon in 9.415 seconds (JVM running for 15.892)
+2021-12-01 16:49:25,700 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Initializing Servlet 'myDispatcherServlet'
+2021-12-01 16:49:25,731 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-01 16:49:25,771 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Finished Spring Data repository scanning in 34 ms. Found 8 JPA repository interfaces.
+2021-12-01 16:49:26,304 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Completed initialization in 594 ms
+2021-12-01 16:49:26,891 INFO com.my.filter.AdminFilter [http-nio-8080-exec-1] admin filter started
+2021-12-01 16:49:26,891 INFO com.my.filter.AdminFilter [http-nio-8080-exec-1] admin access granted
+2021-12-01 16:49:26,891 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-1] request and response encoding set to UTF-8
+2021-12-01 16:49:26,891 INFO com.my.filter.LoginFilter [http-nio-8080-exec-1] login filter started
+2021-12-01 16:49:26,891 INFO com.my.filter.LoginFilter [http-nio-8080-exec-1] access granted
+2021-12-01 16:49:26,891 INFO com.my.filter.MasterFilter [http-nio-8080-exec-1] master filter started
+2021-12-01 16:49:26,891 INFO com.my.filter.MasterFilter [http-nio-8080-exec-1] master access granted
+2021-12-01 16:49:26,891 INFO com.my.filter.UserFilter [http-nio-8080-exec-1] user filter started
+2021-12-01 16:49:26,891 INFO com.my.filter.UserFilter [http-nio-8080-exec-1] user access granted
+2021-12-01 16:49:28,776 INFO com.my.filter.AdminFilter [http-nio-8080-exec-3] admin filter started
+2021-12-01 16:49:28,792 INFO com.my.filter.AdminFilter [http-nio-8080-exec-3] admin access granted
+2021-12-01 16:49:28,792 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-3] request and response encoding set to UTF-8
+2021-12-01 16:49:28,792 INFO com.my.filter.LoginFilter [http-nio-8080-exec-3] login filter started
+2021-12-01 16:49:28,792 INFO com.my.filter.LoginFilter [http-nio-8080-exec-3] access granted
+2021-12-01 16:49:28,792 INFO com.my.filter.MasterFilter [http-nio-8080-exec-3] master filter started
+2021-12-01 16:49:28,792 INFO com.my.filter.MasterFilter [http-nio-8080-exec-3] master access granted
+2021-12-01 16:49:28,792 INFO com.my.filter.UserFilter [http-nio-8080-exec-3] user filter started
+2021-12-01 16:49:28,808 INFO com.my.filter.UserFilter [http-nio-8080-exec-3] user access granted
+2021-12-01 16:49:46,964 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-5] Initializing Servlet 'dispatcherServlet'
+2021-12-01 16:49:46,964 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-5] Completed initialization in 0 ms
+2021-12-01 16:49:46,964 INFO com.my.filter.AdminFilter [http-nio-8080-exec-5] admin filter started
+2021-12-01 16:49:46,964 INFO com.my.filter.AdminFilter [http-nio-8080-exec-5] admin access granted
+2021-12-01 16:49:46,964 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-5] request and response encoding set to UTF-8
+2021-12-01 16:49:46,964 INFO com.my.filter.LoginFilter [http-nio-8080-exec-5] login filter started
+2021-12-01 16:49:46,964 INFO com.my.filter.LoginFilter [http-nio-8080-exec-5] access granted
+2021-12-01 16:49:46,964 INFO com.my.filter.MasterFilter [http-nio-8080-exec-5] master filter started
+2021-12-01 16:49:46,979 INFO com.my.filter.MasterFilter [http-nio-8080-exec-5] master access granted
+2021-12-01 16:49:46,979 INFO com.my.filter.UserFilter [http-nio-8080-exec-5] user filter started
+2021-12-01 16:49:46,979 INFO com.my.filter.UserFilter [http-nio-8080-exec-5] user access granted
+2021-12-01 16:49:47,136 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-5] SELECT accounts.login,services_masters.name_service
+FROM services_masters, accounts
+WHERE services_masters.master_id  = accounts.id
+  ORDER BY services_masters.id LIMIT ? OFFSET ?
+2021-12-01 16:49:47,148 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-5] binding parameter [1] as [INTEGER] - [4]
+2021-12-01 16:49:47,148 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-5] binding parameter [2] as [INTEGER] - [0]
+2021-12-01 16:49:47,148 INFO com.my.controller.service.implementation.MainPageServiceImpl [http-nio-8080-exec-5] list sorted by master
+2021-12-01 16:50:56,689 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-01 16:50:56,704 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2021-12-01 16:50:56,720 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2021-12-01 16:53:06,802 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-12-01 16:53:06,818 INFO org.springframework.boot.StartupInfoLogger [RMI TCP Connection(3)-127.0.0.1] Starting BeautySalon using Java 1.8.0_302 on DESKTOP-U3BAHQK with PID 28944 (C:\Users\Dima\IdeaProjects\SpringFinalProject\target\SpringFinalProject\WEB-INF\classes started by Dima in E:\apache-tomcat-9.54]\bin)
+2021-12-01 16:53:06,834 INFO org.springframework.boot.SpringApplication [RMI TCP Connection(3)-127.0.0.1] No active profile set, falling back to default profiles: default
+2021-12-01 16:53:07,936 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-01 16:53:08,083 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Finished Spring Data repository scanning in 118 ms. Found 8 JPA repository interfaces.
+2021-12-01 16:53:09,008 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [RMI TCP Connection(3)-127.0.0.1] Root WebApplicationContext: initialization completed in 2127 ms
+2021-12-01 16:53:09,450 INFO org.hibernate.jpa.internal.util.LogHelper [RMI TCP Connection(3)-127.0.0.1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-01 16:53:09,592 INFO org.hibernate.Version [RMI TCP Connection(3)-127.0.0.1] HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-01 16:53:09,945 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [RMI TCP Connection(3)-127.0.0.1] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-01 16:53:10,215 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(3)-127.0.0.1] HikariPool-1 - Starting...
+2021-12-01 16:53:10,717 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(3)-127.0.0.1] HikariPool-1 - Start completed.
+2021-12-01 16:53:10,759 INFO org.hibernate.dialect.Dialect [RMI TCP Connection(3)-127.0.0.1] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-12-01 16:53:12,725 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [RMI TCP Connection(3)-127.0.0.1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-01 16:53:12,740 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(3)-127.0.0.1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-01 16:53:14,295 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [RMI TCP Connection(3)-127.0.0.1] select count(*) as col_0_0_ from services_masters masterserv0_
+2021-12-01 16:53:14,434 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [RMI TCP Connection(3)-127.0.0.1] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-01 16:53:15,211 INFO org.springframework.boot.StartupInfoLogger [RMI TCP Connection(3)-127.0.0.1] Started BeautySalon in 9.34 seconds (JVM running for 15.994)
+2021-12-01 16:53:15,229 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Initializing Servlet 'myDispatcherServlet'
+2021-12-01 16:53:15,251 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-01 16:53:15,292 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Finished Spring Data repository scanning in 33 ms. Found 8 JPA repository interfaces.
+2021-12-01 16:53:15,743 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Completed initialization in 512 ms
+2021-12-01 16:53:15,866 INFO com.my.filter.AdminFilter [http-nio-8080-exec-1] admin filter started
+2021-12-01 16:53:15,866 INFO com.my.filter.AdminFilter [http-nio-8080-exec-1] admin access granted
+2021-12-01 16:53:15,866 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-1] request and response encoding set to UTF-8
+2021-12-01 16:53:15,866 INFO com.my.filter.LoginFilter [http-nio-8080-exec-1] login filter started
+2021-12-01 16:53:15,866 INFO com.my.filter.LoginFilter [http-nio-8080-exec-1] access granted
+2021-12-01 16:53:15,866 INFO com.my.filter.MasterFilter [http-nio-8080-exec-1] master filter started
+2021-12-01 16:53:15,866 INFO com.my.filter.MasterFilter [http-nio-8080-exec-1] master access granted
+2021-12-01 16:53:15,866 INFO com.my.filter.UserFilter [http-nio-8080-exec-1] user filter started
+2021-12-01 16:53:15,874 INFO com.my.filter.UserFilter [http-nio-8080-exec-1] user access granted
+2021-12-01 16:53:17,902 INFO com.my.filter.AdminFilter [http-nio-8080-exec-3] admin filter started
+2021-12-01 16:53:17,918 INFO com.my.filter.AdminFilter [http-nio-8080-exec-3] admin access granted
+2021-12-01 16:53:17,933 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-3] request and response encoding set to UTF-8
+2021-12-01 16:53:17,933 INFO com.my.filter.LoginFilter [http-nio-8080-exec-3] login filter started
+2021-12-01 16:53:17,933 INFO com.my.filter.LoginFilter [http-nio-8080-exec-3] access granted
+2021-12-01 16:53:17,933 INFO com.my.filter.MasterFilter [http-nio-8080-exec-3] master filter started
+2021-12-01 16:53:17,933 INFO com.my.filter.MasterFilter [http-nio-8080-exec-3] master access granted
+2021-12-01 16:53:17,933 INFO com.my.filter.UserFilter [http-nio-8080-exec-3] user filter started
+2021-12-01 16:53:17,933 INFO com.my.filter.UserFilter [http-nio-8080-exec-3] user access granted
+2021-12-01 16:53:53,413 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-5] Initializing Servlet 'dispatcherServlet'
+2021-12-01 16:53:53,413 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-5] Completed initialization in 0 ms
+2021-12-01 16:53:53,413 INFO com.my.filter.AdminFilter [http-nio-8080-exec-5] admin filter started
+2021-12-01 16:53:53,413 INFO com.my.filter.AdminFilter [http-nio-8080-exec-5] admin access granted
+2021-12-01 16:53:53,413 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-5] request and response encoding set to UTF-8
+2021-12-01 16:53:53,413 INFO com.my.filter.LoginFilter [http-nio-8080-exec-5] login filter started
+2021-12-01 16:53:53,413 INFO com.my.filter.LoginFilter [http-nio-8080-exec-5] access granted
+2021-12-01 16:53:53,413 INFO com.my.filter.MasterFilter [http-nio-8080-exec-5] master filter started
+2021-12-01 16:53:53,413 INFO com.my.filter.MasterFilter [http-nio-8080-exec-5] master access granted
+2021-12-01 16:53:53,413 INFO com.my.filter.UserFilter [http-nio-8080-exec-5] user filter started
+2021-12-01 16:53:53,413 INFO com.my.filter.UserFilter [http-nio-8080-exec-5] user access granted
+2021-12-01 16:53:53,560 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-5] SELECT accounts.login,services_masters.name_service
+FROM services_masters, accounts
+WHERE services_masters.master_id  = accounts.id
+  ORDER BY services_masters.id LIMIT ? OFFSET ?
+2021-12-01 16:53:53,576 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-5] binding parameter [1] as [INTEGER] - [4]
+2021-12-01 16:53:53,576 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-5] binding parameter [2] as [INTEGER] - [0]
+2021-12-01 16:53:53,592 INFO com.my.controller.service.implementation.MainPageServiceImpl [http-nio-8080-exec-5] list sorted by master
+2021-12-01 16:54:49,556 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-01 16:54:49,571 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2021-12-01 16:54:49,587 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2021-12-01 16:55:14,213 INFO org.springframework.boot.StartupInfoLogger [RMI TCP Connection(3)-127.0.0.1] Starting BeautySalon using Java 1.8.0_302 on DESKTOP-U3BAHQK with PID 12356 (C:\Users\Dima\IdeaProjects\SpringFinalProject\target\SpringFinalProject\WEB-INF\classes started by Dima in E:\apache-tomcat-9.54]\bin)
+2021-12-01 16:55:14,213 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-12-01 16:55:14,228 INFO org.springframework.boot.SpringApplication [RMI TCP Connection(3)-127.0.0.1] No active profile set, falling back to default profiles: default
+2021-12-01 16:55:15,330 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-01 16:55:15,462 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Finished Spring Data repository scanning in 116 ms. Found 8 JPA repository interfaces.
+2021-12-01 16:55:16,414 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [RMI TCP Connection(3)-127.0.0.1] Root WebApplicationContext: initialization completed in 2132 ms
+2021-12-01 16:55:16,842 INFO org.hibernate.jpa.internal.util.LogHelper [RMI TCP Connection(3)-127.0.0.1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-01 16:55:16,983 INFO org.hibernate.Version [RMI TCP Connection(3)-127.0.0.1] HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-01 16:55:17,339 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [RMI TCP Connection(3)-127.0.0.1] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-01 16:55:17,602 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(3)-127.0.0.1] HikariPool-1 - Starting...
+2021-12-01 16:55:18,088 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(3)-127.0.0.1] HikariPool-1 - Start completed.
+2021-12-01 16:55:18,146 INFO org.hibernate.dialect.Dialect [RMI TCP Connection(3)-127.0.0.1] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-12-01 16:55:20,127 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [RMI TCP Connection(3)-127.0.0.1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-01 16:55:20,158 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(3)-127.0.0.1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-01 16:55:21,663 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [RMI TCP Connection(3)-127.0.0.1] select count(*) as col_0_0_ from services_masters masterserv0_
+2021-12-01 16:55:21,754 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [RMI TCP Connection(3)-127.0.0.1] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-01 16:55:22,447 INFO org.springframework.boot.StartupInfoLogger [RMI TCP Connection(3)-127.0.0.1] Started BeautySalon in 9.164 seconds (JVM running for 15.687)
+2021-12-01 16:55:22,459 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Initializing Servlet 'myDispatcherServlet'
+2021-12-01 16:55:22,479 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-01 16:55:22,519 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Finished Spring Data repository scanning in 33 ms. Found 8 JPA repository interfaces.
+2021-12-01 16:55:23,053 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Completed initialization in 594 ms
+2021-12-01 16:55:23,320 INFO com.my.filter.AdminFilter [http-nio-8080-exec-1] admin filter started
+2021-12-01 16:55:23,320 INFO com.my.filter.AdminFilter [http-nio-8080-exec-1] admin access granted
+2021-12-01 16:55:23,320 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-1] request and response encoding set to UTF-8
+2021-12-01 16:55:23,320 INFO com.my.filter.LoginFilter [http-nio-8080-exec-1] login filter started
+2021-12-01 16:55:23,320 INFO com.my.filter.LoginFilter [http-nio-8080-exec-1] access granted
+2021-12-01 16:55:23,320 INFO com.my.filter.MasterFilter [http-nio-8080-exec-1] master filter started
+2021-12-01 16:55:23,320 INFO com.my.filter.MasterFilter [http-nio-8080-exec-1] master access granted
+2021-12-01 16:55:23,320 INFO com.my.filter.UserFilter [http-nio-8080-exec-1] user filter started
+2021-12-01 16:55:23,320 INFO com.my.filter.UserFilter [http-nio-8080-exec-1] user access granted
+2021-12-01 16:55:25,279 INFO com.my.filter.AdminFilter [http-nio-8080-exec-3] admin filter started
+2021-12-01 16:55:25,291 INFO com.my.filter.AdminFilter [http-nio-8080-exec-3] admin access granted
+2021-12-01 16:55:25,301 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-3] request and response encoding set to UTF-8
+2021-12-01 16:55:25,301 INFO com.my.filter.LoginFilter [http-nio-8080-exec-3] login filter started
+2021-12-01 16:55:25,301 INFO com.my.filter.LoginFilter [http-nio-8080-exec-3] access granted
+2021-12-01 16:55:25,301 INFO com.my.filter.MasterFilter [http-nio-8080-exec-3] master filter started
+2021-12-01 16:55:25,311 INFO com.my.filter.MasterFilter [http-nio-8080-exec-3] master access granted
+2021-12-01 16:55:25,311 INFO com.my.filter.UserFilter [http-nio-8080-exec-3] user filter started
+2021-12-01 16:55:25,311 INFO com.my.filter.UserFilter [http-nio-8080-exec-3] user access granted
+2021-12-01 16:55:35,437 INFO com.my.filter.AdminFilter [http-nio-8080-exec-5] admin filter started
+2021-12-01 16:55:35,437 INFO com.my.filter.AdminFilter [http-nio-8080-exec-5] admin access granted
+2021-12-01 16:55:35,437 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-5] request and response encoding set to UTF-8
+2021-12-01 16:55:35,437 INFO com.my.filter.LoginFilter [http-nio-8080-exec-5] login filter started
+2021-12-01 16:55:35,437 INFO com.my.filter.LoginFilter [http-nio-8080-exec-5] access granted
+2021-12-01 16:55:35,437 INFO com.my.filter.MasterFilter [http-nio-8080-exec-5] master filter started
+2021-12-01 16:55:35,437 INFO com.my.filter.MasterFilter [http-nio-8080-exec-5] master access granted
+2021-12-01 16:55:35,437 INFO com.my.filter.UserFilter [http-nio-8080-exec-5] user filter started
+2021-12-01 16:55:35,437 INFO com.my.filter.UserFilter [http-nio-8080-exec-5] user access granted
+2021-12-01 16:55:35,484 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-5] No mapping for GET /FPS/controller
+2021-12-01 16:55:35,484 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-5] No mapping for GET /FPS/error
+2021-12-01 16:55:47,546 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-01 16:55:47,562 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2021-12-01 16:55:47,578 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2021-12-01 16:56:07,457 INFO org.springframework.boot.StartupInfoLogger [RMI TCP Connection(3)-127.0.0.1] Starting BeautySalon using Java 1.8.0_302 on DESKTOP-U3BAHQK with PID 20360 (C:\Users\Dima\IdeaProjects\SpringFinalProject\target\SpringFinalProject\WEB-INF\classes started by Dima in E:\apache-tomcat-9.54]\bin)
+2021-12-01 16:56:07,457 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-12-01 16:56:07,457 INFO org.springframework.boot.SpringApplication [RMI TCP Connection(3)-127.0.0.1] No active profile set, falling back to default profiles: default
+2021-12-01 16:56:08,582 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-01 16:56:08,713 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Finished Spring Data repository scanning in 116 ms. Found 8 JPA repository interfaces.
+2021-12-01 16:56:09,647 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [RMI TCP Connection(3)-127.0.0.1] Root WebApplicationContext: initialization completed in 2121 ms
+2021-12-01 16:56:10,078 INFO org.hibernate.jpa.internal.util.LogHelper [RMI TCP Connection(3)-127.0.0.1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-01 16:56:10,210 INFO org.hibernate.Version [RMI TCP Connection(3)-127.0.0.1] HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-01 16:56:10,567 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [RMI TCP Connection(3)-127.0.0.1] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-01 16:56:10,838 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(3)-127.0.0.1] HikariPool-1 - Starting...
+2021-12-01 16:56:11,339 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(3)-127.0.0.1] HikariPool-1 - Start completed.
+2021-12-01 16:56:11,401 INFO org.hibernate.dialect.Dialect [RMI TCP Connection(3)-127.0.0.1] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-12-01 16:56:13,381 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [RMI TCP Connection(3)-127.0.0.1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-01 16:56:13,397 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(3)-127.0.0.1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-01 16:56:14,942 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [RMI TCP Connection(3)-127.0.0.1] select count(*) as col_0_0_ from services_masters masterserv0_
+2021-12-01 16:56:15,033 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [RMI TCP Connection(3)-127.0.0.1] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-01 16:56:15,719 INFO org.springframework.boot.StartupInfoLogger [RMI TCP Connection(3)-127.0.0.1] Started BeautySalon in 9.183 seconds (JVM running for 15.649)
+2021-12-01 16:56:15,729 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Initializing Servlet 'myDispatcherServlet'
+2021-12-01 16:56:15,749 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-01 16:56:15,789 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Finished Spring Data repository scanning in 35 ms. Found 8 JPA repository interfaces.
+2021-12-01 16:56:16,333 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Completed initialization in 604 ms
+2021-12-01 16:56:16,626 INFO com.my.filter.AdminFilter [http-nio-8080-exec-1] admin filter started
+2021-12-01 16:56:16,626 INFO com.my.filter.AdminFilter [http-nio-8080-exec-1] admin access granted
+2021-12-01 16:56:16,626 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-1] request and response encoding set to UTF-8
+2021-12-01 16:56:16,626 INFO com.my.filter.LoginFilter [http-nio-8080-exec-1] login filter started
+2021-12-01 16:56:16,626 INFO com.my.filter.LoginFilter [http-nio-8080-exec-1] access granted
+2021-12-01 16:56:16,626 INFO com.my.filter.MasterFilter [http-nio-8080-exec-1] master filter started
+2021-12-01 16:56:16,626 INFO com.my.filter.MasterFilter [http-nio-8080-exec-1] master access granted
+2021-12-01 16:56:16,626 INFO com.my.filter.UserFilter [http-nio-8080-exec-1] user filter started
+2021-12-01 16:56:16,626 INFO com.my.filter.UserFilter [http-nio-8080-exec-1] user access granted
+2021-12-01 16:56:18,562 INFO com.my.filter.AdminFilter [http-nio-8080-exec-3] admin filter started
+2021-12-01 16:56:18,562 INFO com.my.filter.AdminFilter [http-nio-8080-exec-3] admin access granted
+2021-12-01 16:56:18,562 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-3] request and response encoding set to UTF-8
+2021-12-01 16:56:18,570 INFO com.my.filter.LoginFilter [http-nio-8080-exec-3] login filter started
+2021-12-01 16:56:18,570 INFO com.my.filter.LoginFilter [http-nio-8080-exec-3] access granted
+2021-12-01 16:56:18,570 INFO com.my.filter.MasterFilter [http-nio-8080-exec-3] master filter started
+2021-12-01 16:56:18,570 INFO com.my.filter.MasterFilter [http-nio-8080-exec-3] master access granted
+2021-12-01 16:56:18,570 INFO com.my.filter.UserFilter [http-nio-8080-exec-3] user filter started
+2021-12-01 16:56:18,570 INFO com.my.filter.UserFilter [http-nio-8080-exec-3] user access granted
+2021-12-01 16:56:40,400 INFO com.my.filter.AdminFilter [http-nio-8080-exec-5] admin filter started
+2021-12-01 16:56:40,400 INFO com.my.filter.AdminFilter [http-nio-8080-exec-5] admin access granted
+2021-12-01 16:56:40,400 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-5] request and response encoding set to UTF-8
+2021-12-01 16:56:40,400 INFO com.my.filter.LoginFilter [http-nio-8080-exec-5] login filter started
+2021-12-01 16:56:40,400 INFO com.my.filter.LoginFilter [http-nio-8080-exec-5] access granted
+2021-12-01 16:56:40,400 INFO com.my.filter.MasterFilter [http-nio-8080-exec-5] master filter started
+2021-12-01 16:56:40,400 INFO com.my.filter.MasterFilter [http-nio-8080-exec-5] master access granted
+2021-12-01 16:56:40,400 INFO com.my.filter.UserFilter [http-nio-8080-exec-5] user filter started
+2021-12-01 16:56:40,400 INFO com.my.filter.UserFilter [http-nio-8080-exec-5] user access granted
+2021-12-01 16:56:40,440 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-5] No mapping for GET /FPS/controller
+2021-12-01 16:56:40,440 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-5] No mapping for GET /FPS/error
+2021-12-01 16:56:52,169 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-01 16:56:52,201 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2021-12-01 16:56:52,216 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2021-12-01 16:57:54,639 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-12-01 16:57:54,655 INFO org.springframework.boot.StartupInfoLogger [RMI TCP Connection(3)-127.0.0.1] Starting BeautySalon using Java 1.8.0_302 on DESKTOP-U3BAHQK with PID 29588 (C:\Users\Dima\IdeaProjects\SpringFinalProject\target\SpringFinalProject\WEB-INF\classes started by Dima in E:\apache-tomcat-9.54]\bin)
+2021-12-01 16:57:54,670 INFO org.springframework.boot.SpringApplication [RMI TCP Connection(3)-127.0.0.1] No active profile set, falling back to default profiles: default
+2021-12-01 16:57:55,795 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-01 16:57:55,942 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Finished Spring Data repository scanning in 114 ms. Found 8 JPA repository interfaces.
+2021-12-01 16:57:56,876 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [RMI TCP Connection(3)-127.0.0.1] Root WebApplicationContext: initialization completed in 2152 ms
+2021-12-01 16:57:57,310 INFO org.hibernate.jpa.internal.util.LogHelper [RMI TCP Connection(3)-127.0.0.1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-01 16:57:57,471 INFO org.hibernate.Version [RMI TCP Connection(3)-127.0.0.1] HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-01 16:57:57,934 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [RMI TCP Connection(3)-127.0.0.1] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-01 16:57:58,294 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(3)-127.0.0.1] HikariPool-1 - Starting...
+2021-12-01 16:57:58,940 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(3)-127.0.0.1] HikariPool-1 - Start completed.
+2021-12-01 16:57:58,988 INFO org.hibernate.dialect.Dialect [RMI TCP Connection(3)-127.0.0.1] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-12-01 16:58:01,194 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [RMI TCP Connection(3)-127.0.0.1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-01 16:58:01,225 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(3)-127.0.0.1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-01 16:58:02,854 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [RMI TCP Connection(3)-127.0.0.1] select count(*) as col_0_0_ from services_masters masterserv0_
+2021-12-01 16:58:02,963 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [RMI TCP Connection(3)-127.0.0.1] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-01 16:58:03,740 INFO org.springframework.boot.StartupInfoLogger [RMI TCP Connection(3)-127.0.0.1] Started BeautySalon in 10.045 seconds (JVM running for 16.633)
+2021-12-01 16:58:03,768 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Initializing Servlet 'myDispatcherServlet'
+2021-12-01 16:58:03,800 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-01 16:58:03,840 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [RMI TCP Connection(3)-127.0.0.1] Finished Spring Data repository scanning in 38 ms. Found 8 JPA repository interfaces.
+2021-12-01 16:58:04,413 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Completed initialization in 643 ms
+2021-12-01 16:58:04,675 INFO com.my.filter.AdminFilter [http-nio-8080-exec-1] admin filter started
+2021-12-01 16:58:04,675 INFO com.my.filter.AdminFilter [http-nio-8080-exec-1] admin access granted
+2021-12-01 16:58:04,675 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-1] request and response encoding set to UTF-8
+2021-12-01 16:58:04,675 INFO com.my.filter.LoginFilter [http-nio-8080-exec-1] login filter started
+2021-12-01 16:58:04,675 INFO com.my.filter.LoginFilter [http-nio-8080-exec-1] access granted
+2021-12-01 16:58:04,675 INFO com.my.filter.MasterFilter [http-nio-8080-exec-1] master filter started
+2021-12-01 16:58:04,675 INFO com.my.filter.MasterFilter [http-nio-8080-exec-1] master access granted
+2021-12-01 16:58:04,675 INFO com.my.filter.UserFilter [http-nio-8080-exec-1] user filter started
+2021-12-01 16:58:04,675 INFO com.my.filter.UserFilter [http-nio-8080-exec-1] user access granted
+2021-12-01 16:58:06,777 INFO com.my.filter.AdminFilter [http-nio-8080-exec-3] admin filter started
+2021-12-01 16:58:06,777 INFO com.my.filter.AdminFilter [http-nio-8080-exec-3] admin access granted
+2021-12-01 16:58:06,777 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-3] request and response encoding set to UTF-8
+2021-12-01 16:58:06,777 INFO com.my.filter.LoginFilter [http-nio-8080-exec-3] login filter started
+2021-12-01 16:58:06,777 INFO com.my.filter.LoginFilter [http-nio-8080-exec-3] access granted
+2021-12-01 16:58:06,777 INFO com.my.filter.MasterFilter [http-nio-8080-exec-3] master filter started
+2021-12-01 16:58:06,777 INFO com.my.filter.MasterFilter [http-nio-8080-exec-3] master access granted
+2021-12-01 16:58:06,777 INFO com.my.filter.UserFilter [http-nio-8080-exec-3] user filter started
+2021-12-01 16:58:06,777 INFO com.my.filter.UserFilter [http-nio-8080-exec-3] user access granted
+2021-12-01 16:58:56,239 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-5] Initializing Servlet 'dispatcherServlet'
+2021-12-01 16:58:56,239 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-5] Completed initialization in 0 ms
+2021-12-01 16:58:56,239 INFO com.my.filter.AdminFilter [http-nio-8080-exec-5] admin filter started
+2021-12-01 16:58:56,239 INFO com.my.filter.AdminFilter [http-nio-8080-exec-5] admin access granted
+2021-12-01 16:58:56,239 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-5] request and response encoding set to UTF-8
+2021-12-01 16:58:56,239 INFO com.my.filter.LoginFilter [http-nio-8080-exec-5] login filter started
+2021-12-01 16:58:56,239 INFO com.my.filter.LoginFilter [http-nio-8080-exec-5] access granted
+2021-12-01 16:58:56,239 INFO com.my.filter.MasterFilter [http-nio-8080-exec-5] master filter started
+2021-12-01 16:58:56,239 INFO com.my.filter.MasterFilter [http-nio-8080-exec-5] master access granted
+2021-12-01 16:58:56,239 INFO com.my.filter.UserFilter [http-nio-8080-exec-5] user filter started
+2021-12-01 16:58:56,239 INFO com.my.filter.UserFilter [http-nio-8080-exec-5] user access granted
+2021-12-01 16:58:56,393 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-5] SELECT accounts.login,services_masters.name_service
+FROM services_masters, accounts
+WHERE services_masters.master_id  = accounts.id
+  ORDER BY services_masters.id LIMIT ? OFFSET ?
+2021-12-01 16:58:56,408 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-5] binding parameter [1] as [INTEGER] - [4]
+2021-12-01 16:58:56,408 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-5] binding parameter [2] as [INTEGER] - [0]
+2021-12-01 16:58:56,424 INFO com.my.controller.service.implementation.MainPageServiceImpl [http-nio-8080-exec-5] list sorted by master
+2021-12-01 16:59:00,945 INFO com.my.filter.AdminFilter [http-nio-8080-exec-6] admin filter started
+2021-12-01 16:59:00,945 INFO com.my.filter.AdminFilter [http-nio-8080-exec-6] admin access granted
+2021-12-01 16:59:00,945 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-6] request and response encoding set to UTF-8
+2021-12-01 16:59:00,945 INFO com.my.filter.LoginFilter [http-nio-8080-exec-6] login filter started
+2021-12-01 16:59:00,945 INFO com.my.filter.LoginFilter [http-nio-8080-exec-6] access granted
+2021-12-01 16:59:00,945 INFO com.my.filter.MasterFilter [http-nio-8080-exec-6] master filter started
+2021-12-01 16:59:00,945 INFO com.my.filter.MasterFilter [http-nio-8080-exec-6] master access granted
+2021-12-01 16:59:00,945 INFO com.my.filter.UserFilter [http-nio-8080-exec-6] user filter started
+2021-12-01 16:59:00,945 INFO com.my.filter.UserFilter [http-nio-8080-exec-6] user access granted
+2021-12-01 16:59:10,267 INFO com.my.filter.AdminFilter [http-nio-8080-exec-7] admin filter started
+2021-12-01 16:59:10,267 INFO com.my.filter.AdminFilter [http-nio-8080-exec-7] admin access granted
+2021-12-01 16:59:10,267 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-7] request and response encoding set to UTF-8
+2021-12-01 16:59:10,267 INFO com.my.filter.LoginFilter [http-nio-8080-exec-7] login filter started
+2021-12-01 16:59:10,267 INFO com.my.filter.LoginFilter [http-nio-8080-exec-7] access granted
+2021-12-01 16:59:10,267 INFO com.my.filter.MasterFilter [http-nio-8080-exec-7] master filter started
+2021-12-01 16:59:10,267 INFO com.my.filter.MasterFilter [http-nio-8080-exec-7] master access granted
+2021-12-01 16:59:10,283 INFO com.my.filter.UserFilter [http-nio-8080-exec-7] user filter started
+2021-12-01 16:59:10,283 INFO com.my.filter.UserFilter [http-nio-8080-exec-7] user access granted
+2021-12-01 16:59:10,351 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-7] select account0_.id as col_0_0_ from accounts account0_ where account0_.login=? limit ?
+2021-12-01 16:59:10,351 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-7] binding parameter [1] as [VARCHAR] - [user1]
+2021-12-01 16:59:10,367 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-7] select account0_.id as id1_0_, account0_.email as email2_0_, account0_.login as login3_0_, account0_.password as password4_0_ from accounts account0_ where account0_.login=?
+2021-12-01 16:59:10,367 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-7] binding parameter [1] as [VARCHAR] - [user1]
+2021-12-01 16:59:10,420 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-7] select account0_.id as col_0_0_ from accounts account0_ where account0_.login=? limit ?
+2021-12-01 16:59:10,420 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-7] binding parameter [1] as [VARCHAR] - [user1]
+2021-12-01 16:59:10,420 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-7] select user0_.id as col_0_0_ from users user0_ where user0_.id=? limit ?
+2021-12-01 16:59:10,420 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-7] binding parameter [1] as [INTEGER] - [12]
+2021-12-01 16:59:10,451 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-7] select user0_.id as id1_7_0_, user0_.wallet as wallet2_7_0_ from users user0_ where user0_.id=?
+2021-12-01 16:59:10,451 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-7] binding parameter [1] as [INTEGER] - [12]
+2021-12-01 16:59:10,520 INFO com.my.filter.AdminFilter [http-nio-8080-exec-8] admin filter started
+2021-12-01 16:59:10,520 INFO com.my.filter.AdminFilter [http-nio-8080-exec-8] admin access granted
+2021-12-01 16:59:10,520 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-8] request and response encoding set to UTF-8
+2021-12-01 16:59:10,520 INFO com.my.filter.LoginFilter [http-nio-8080-exec-8] login filter started
+2021-12-01 16:59:10,520 INFO com.my.filter.LoginFilter [http-nio-8080-exec-8] access granted
+2021-12-01 16:59:10,520 INFO com.my.filter.MasterFilter [http-nio-8080-exec-8] master filter started
+2021-12-01 16:59:10,520 INFO com.my.filter.MasterFilter [http-nio-8080-exec-8] master access granted
+2021-12-01 16:59:10,520 INFO com.my.filter.UserFilter [http-nio-8080-exec-8] user filter started
+2021-12-01 16:59:10,520 INFO com.my.filter.UserFilter [http-nio-8080-exec-8] user access granted
+2021-12-01 16:59:10,520 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-8] SELECT accounts.login,services_masters.name_service
+FROM services_masters, accounts
+WHERE services_masters.master_id  = accounts.id
+  ORDER BY services_masters.id LIMIT ? OFFSET ?
+2021-12-01 16:59:10,520 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-8] binding parameter [1] as [INTEGER] - [4]
+2021-12-01 16:59:10,520 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-8] binding parameter [2] as [INTEGER] - [0]
+2021-12-01 16:59:10,536 INFO com.my.controller.service.implementation.MainPageServiceImpl [http-nio-8080-exec-8] list sorted by master
+2021-12-01 16:59:14,704 INFO com.my.filter.AdminFilter [http-nio-8080-exec-9] admin filter started
+2021-12-01 16:59:14,704 INFO com.my.filter.AdminFilter [http-nio-8080-exec-9] admin access granted
+2021-12-01 16:59:14,704 INFO com.my.filter.EncodingFilter [http-nio-8080-exec-9] request and response encoding set to UTF-8
+2021-12-01 16:59:14,704 INFO com.my.filter.LoginFilter [http-nio-8080-exec-9] login filter started
+2021-12-01 16:59:14,704 INFO com.my.filter.LoginFilter [http-nio-8080-exec-9] access granted
+2021-12-01 16:59:14,704 INFO com.my.filter.MasterFilter [http-nio-8080-exec-9] master filter started
+2021-12-01 16:59:14,704 INFO com.my.filter.MasterFilter [http-nio-8080-exec-9] master access granted
+2021-12-01 16:59:14,704 INFO com.my.filter.UserFilter [http-nio-8080-exec-9] user filter started
+2021-12-01 16:59:14,704 INFO com.my.filter.UserFilter [http-nio-8080-exec-9] user access granted
+2021-12-01 16:59:14,719 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-9] select feedback0_.id as id1_2_, feedback0_.feedback as feedback2_2_, feedback0_.master_id as master_i3_2_, feedback0_.user_id as user_id4_2_, feedback0_.user_rate as user_rat5_2_ from feedbacks feedback0_
+2021-12-01 16:59:43,464 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-01 16:59:43,480 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2021-12-01 16:59:43,496 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
