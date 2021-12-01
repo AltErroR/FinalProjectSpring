@@ -1,23 +1,19 @@
 package com.my.controller.service.implementation;
 
 import com.my.controller.service.MailSendService;
-import com.my.listener.Mailer;
 import com.my.repository.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.task.TaskExecutor;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.scheduling.annotation.Async;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.PostConstruct;
 import java.util.List;
 
 import static com.my.constants.Constants.*;
- @Service("MailSendService")
+
+@Service("MailSendService")
 public class MailSendServiceImpl implements MailSendService {
     private static final Logger logger = LoggerFactory.getLogger(MailSendServiceImpl.class);
     @Autowired

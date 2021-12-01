@@ -51,7 +51,6 @@ public class Constants {
     public static final String SALON_EMAIL = "b24963@gmail.com";
     public static final String SALON_NAME = "Romashka&Petrushka Salon";
     public static final String MAIL_MESSAGE = "Leave feedback please for yesterday service";
-    public static final String MAIL_PASSWORD = "123456B_o";
     public static final String PAGE = "page";
     public static final String NUMBER_OF_PAGES = "noOfPages";
     public static final String CURRENT_PAGE = "currentPage";
@@ -69,7 +68,7 @@ public class Constants {
     public static final String ORDERS_LIST = "ordersList";
     public static final String BIN = "bin";
     public static final String SRC = "src";
-    public static final String LOG4J_PROPERTIES = "log4j2.properties";
+    public static final String LOG4J_PROPERTIES = "logback-spring.properties";
     public static final String CONNECTION_CONTEXT ="java:comp/env/jdbc/salon";
     public static final String UTF_8 ="UTF-8";
     public static final String WRONG_PASSWORD = "wrong password";

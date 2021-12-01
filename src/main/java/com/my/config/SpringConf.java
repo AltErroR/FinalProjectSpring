@@ -26,8 +26,6 @@ import java.util.Properties;
 
 @Configuration
 @EnableJpaRepositories("com.my.repository")
-@EnableAutoConfiguration
-@ComponentScan("com.my")
 @EntityScan(basePackages = "com.my.entity")
 @EnableWebMvc
 @EnableTransactionManagement

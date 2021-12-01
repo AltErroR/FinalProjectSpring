@@ -1,17 +1,30 @@
 package com.my;
 
-//import com.my.entity.*;
-//import com.my.repository.*;
-//import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.boot.CommandLineRunner;
-//import org.springframework.boot.SpringApplication;
-//import org.springframework.boot.autoconfigure.SpringBootApplication;
-//import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
-//import org.springframework.context.annotation.Bean;
-//
-//import java.util.List;
-//
-//
+import com.my.entity.*;
+import com.my.repository.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+import org.springframework.context.annotation.Bean;
+
+import java.util.List;
+
+
+@SpringBootApplication
+public class BeautySalon extends SpringBootServletInitializer {
+
+    static Logger logger = LoggerFactory.getLogger("reportsLogger");
+
+    public static void main(String[] args) {
+        logger.info("*** REPORTING SERVICE STARTED ***");
+        SpringApplication.run(BeautySalon.class, args);
+    }
+}
+
 //@SpringBootApplication
 //public class BeautySalon  extends SpringBootServletInitializer {
 ////    @Autowired
@@ -45,7 +58,8 @@ package com.my;
 //
 //
 //        }
-//
+
+
 //        @Bean
 //    CommandLineRunner commandLineRunner(){return args -> {
 ////            admin=adminRepository.getByLogin("admin2");
