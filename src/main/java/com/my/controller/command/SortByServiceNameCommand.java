@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import static com.my.constants.Constants.*;
-import static com.my.constants.SQLConstants.SQL_SUBLIST_BY_SERVICE_NAME;
 @Component
 public class SortByServiceNameCommand implements Command {
     private static final Logger logger = LoggerFactory.getLogger(SortByServiceNameCommand.class);

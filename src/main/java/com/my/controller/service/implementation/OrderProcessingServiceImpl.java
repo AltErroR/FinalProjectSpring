@@ -107,7 +107,8 @@ public class OrderProcessingServiceImpl implements OrderProcessingService {
 
     @Override
     public String getUserOrders(HttpServletRequest request, HttpServletResponse response){
-        List<Order> ordersList= orderRepository.getAll4User((int)request.getSession().getAttribute(USER_ID));
+            int userId=Integer.parseInt(request.getSession().getAttribute(USER_ID).toString());
+        List<Order> ordersList= orderRepository.getAll4User(userId);
         request.setAttribute(ORDERS_LIST,ordersList);
         logger.debug(SUCCESS);
         return WRITE_FEEDBACK_JSP;

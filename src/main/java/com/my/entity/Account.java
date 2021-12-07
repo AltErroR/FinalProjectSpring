@@ -6,7 +6,6 @@ import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Set;
 
 @Entity
 @Component
@@ -23,6 +22,11 @@ public class Account implements Serializable {
     protected String password;
     @Column(name="email",length = 45)
     protected String email;
+//    @Enumerated(value = EnumType.STRING)
+//    @Column(name = "role")
+//    private Role role;
+//    @Column(name = "status")
+//    private boolean status;
 
     @OneToOne(cascade = {CascadeType.DETACH},fetch = FetchType.LAZY, mappedBy = "account")
     @PrimaryKeyJoinColumn
@@ -39,7 +43,21 @@ public class Account implements Serializable {
         this.id = id;
         this.login = login;
     }
-
+//
+//    public Role getRole() {
+//        return role;
+//    }
+//
+//    public void setRole(Role role) {
+//        this.role = role;
+//    }
+//    public Boolean getStatus() {
+//        return status;
+//    }
+//
+//    public void setStatus(Boolean status) {
+//        this.status = status;
+//    }
 
     public int getId() {
         return id;
@@ -78,6 +96,9 @@ public class Account implements Serializable {
         return "Account { Id : " + id +
                 " Email : " + email +
                 " Login : " + login +
-                " Password : " + password + " }";
+                " Password : " + password +
+//                " Status : " +status +
+//                " Role : " + role +
+                 " }";
     }
 }

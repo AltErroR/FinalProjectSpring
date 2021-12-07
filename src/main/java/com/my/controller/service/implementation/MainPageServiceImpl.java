@@ -2,7 +2,6 @@ package com.my.controller.service.implementation;
 
 import com.my.controller.service.MainPageService;
 import com.my.dto.MasterServiceDTO;
-import com.my.entity.MasterService;
 import com.my.repository.MasterServiceRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,7 +12,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -78,7 +76,7 @@ public class MainPageServiceImpl implements MainPageService {
         return MAIN_JSP;
     }
 
-    private List<MasterServiceDTO> getMasterServiceDTOList() {
+    public List<MasterServiceDTO> getMasterServiceDTOList() {
 
         List<MasterServiceDTO> masterServiceDTO = new ArrayList<> ();
         for (Map<String,String> m:searchList) {
@@ -87,4 +85,5 @@ public class MainPageServiceImpl implements MainPageService {
         }
         return masterServiceDTO;
     }
+    public void setNoOfRecords(long number){this.noOfRecords=number;}
 }

@@ -8,7 +8,7 @@ public class MasterServiceDTO {
     private String masterLogin;
     private String serviceName;
 
-    public MasterServiceDTO(){};
+    public MasterServiceDTO(){}
 
     public MasterServiceDTO(String masterLogin, String serviceName) {
         this.masterLogin=masterLogin;

@@ -1,7 +1,6 @@
 package com.my.controller.service.implementation;
 
 import com.my.controller.service.BookingService;
-import com.my.entity.Account;
 import com.my.entity.Order;
 import com.my.repository.AccountRepository;
 import com.my.repository.OrderRepository;
@@ -34,7 +33,6 @@ public class BookingServiceImpl implements BookingService {
 
     @Override
     public String booking(Date dateSlot, String timeSlot, String masterLogin, String serviceName, int userId) throws Exception {
-
       int masterId=accountRepository.getByLogin(masterLogin).getId();
         if(orderRepository.existsOrderByMasterIdAndDateSlotAndTimeSlotAndServiceName(masterId, dateSlot, timeSlot, serviceName))
         {

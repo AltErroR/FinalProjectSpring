@@ -15,7 +15,7 @@ import static com.my.constants.Constants.*;
 public class AdminFilter implements Filter {
     private static final Logger logger = LoggerFactory.getLogger(AdminFilter.class);
     @Override
-    public void init(FilterConfig filterConfig) throws ServletException {
+    public void init(FilterConfig filterConfig)  {
         //notodo
     }
 

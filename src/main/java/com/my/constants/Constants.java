@@ -64,15 +64,9 @@ public class Constants {
     public static final String STATUS = "status";
     public static final String DELETE = "delete";
     public static final String UPDATE = "update";
-    public static final String PAID = "paid";
     public static final String ORDERS_LIST = "ordersList";
-    public static final String BIN = "bin";
-    public static final String SRC = "src";
-    public static final String LOG4J_PROPERTIES = "logback-spring.properties";
-    public static final String CONNECTION_CONTEXT ="java:comp/env/jdbc/salon";
     public static final String UTF_8 ="UTF-8";
     public static final String WRONG_PASSWORD = "wrong password";
-    public static final String COMMAND = "command";
 
     public static final String MAIN_JSP = "view/main.jsp";
     public static final String MASTER_HOME_JSP = "view/masterHome.jsp";
@@ -123,10 +117,5 @@ public class Constants {
     public static final String FEEDBACK_WRITE_COMMAND ="/FPS/controller?command=feedbackWrite";
     public static final String ORDERS_COMMAND ="/FPS/controller?command=orders";
     public static final String BOOKING_COMMAND ="/FPS/controller?command=booking";
-
-
-
-
-
 
 }

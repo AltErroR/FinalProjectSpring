@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import static com.my.constants.Constants.MASTER;
 import static com.my.constants.Constants.SORT_BY;
-import static com.my.constants.SQLConstants.SQL_SUBLIST_BY_MASTER;
 
 @Component
 public class SortByMasterCommand implements Command {
