@@ -21,7 +21,7 @@
     <input type="hidden" name="command" value="adminHomeInit">
     <div>
         <div style="text-align: center;"/>
-        <br><br>
+        <br>
         <table align="center" style="width:70%; text-align: center" class="table">
             <tr>
                 <td><fmt:message key="order id"/></td>
@@ -46,21 +46,21 @@
             </c:forEach>
 
         </table>
-        <br><br>
+        <br>
     </div>
 </form>
 <form action="${pageContext.request.contextPath}/controller?command=orderChange" method="POST">
     <div align="center">
         <input type="text" name="orderId" value="" placeholder=<fmt:message key="input order id"/>
-               maxlength="5" size="20" pattern="[0-9]{1,5}"required><br><br>
+               maxlength="5" size="20" pattern="[0-9]{1,5}"required><br>
         <input name="date" type="text" value="" placeholder=<fmt:message key="input date"/> minlength="8"
-               maxlength="10" size="20"pattern="[0-9]{4}[-][0-9]{1,2}[-][0-9]{1,2}"required/><br><br>
+               maxlength="10" size="20"pattern="[0-9]{4}[-][0-9]{1,2}[-][0-9]{1,2}"required/><br>
         <input name="time" type="text" value=""  placeholder=<fmt:message key="input time"/> minlength="3"
-               maxlength="5" size="20"pattern="[0-9]{1,2}[:][0-9]{1,2}"required/><br><br>
+               maxlength="5" size="20"pattern="[0-9]{1,2}[:][0-9]{1,2}"required/><br>
         <h7><fmt:message key="update order"/></h7>
         <input type="radio" name="status" value="update" /><br>
         <h7><fmt:message key="delete order"/></h7>
-        <input type="radio" name="status" value="delete" /><br><br>
+        <input type="radio" name="status" value="delete" /><br>
         <input type="submit" value="Change order">
 
     </div>

@@ -21,7 +21,7 @@
     <input type="hidden" name="command" value="orders">
     <div>
         <div style="text-align: center;"/>
-        <br><br>
+        <br>
         <table align="center" style="width:70%; text-align: center" class="table">
             <tr>
                 <td><fmt:message key="id"/></td>
@@ -42,15 +42,15 @@
             </c:forEach>
 
         </table>
-        <br><br>
+        <br>
     </div>
 </form>
 <form action="${pageContext.request.contextPath}/controller?command=feedbackWrite" method="POST">
     <div>
         <div style="text-align: center;"/>
-        <textarea align="center" style="width:70%" rows="7" cols="80" name="message" placeholder=<fmt:message key="input message"/>>
-        </textarea><br><br>
-        <input align="center" type="text" placeholder=<fmt:message key="input master"/> name="master" required/><br><br>
+        <textarea align="center" style="width:70%" rows="5" cols="60" name="message" placeholder=<fmt:message key="input message"/>>
+        </textarea><br>
+        <input align="center" type="text" placeholder=<fmt:message key="input master"/> name="master" required/><br>
         <label for="rate"><fmt:message key="which mark would you leave"/></label><br>
         <select style="alignment: center" style="width:10%" name="rate" id="rate" multiple>
             <option value="1">1</option>
@@ -64,7 +64,7 @@
             <option value="9">9</option>
             <option value="10">10</option>
         </select>
-        <br><br>
+        <br>
         <input align="center" type="submit" value="<fmt:message key="submit"/>">
     </div>
 </form>
